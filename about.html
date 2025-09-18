@@ -43,31 +43,45 @@
     border-radius: 8px;
 }
 
-/* About Section Footer */
-.about-msg .dir-detail {
-    text-align: center;
-    margin-top: 1.5rem;
+
+.about-highlight .desk-image {
+    width: 100%;        /* spans the full width of the message box */
+    height: auto;       /* maintains aspect ratio */
+    display: block;     /* remove inline gaps */
+    margin-bottom: 15px; /* spacing below image */
+    border-radius: 8px; /* optional rounded corners */
+    object-fit: cover;  /* crops if needed to fill width */
 }
 
-.about-msg .dir-title {
-    font-size: 1.2rem;
-    color: #2e7d32;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
 
-.about-msg .principal-name {
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 0.3rem 0;
-    color: #1b5e20;
-}
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            .dir-msg {
+                flex-direction: column;
+                align-items: center;
+            }
 
-.about-msg .designation {
-    font-size: 0.9rem;
-    color: #4b4b4b;
-    margin: 0.2rem 0;
-}
+            .dir-detail {
+                max-width: 100%;
+            }
+
+            .about-highlight {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
     </style>
 </head>
