@@ -190,47 +190,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-wrapper">
-            <span class="logo"><img src="img/college_logo.jpg" alt=""></span>
-            <div class="row">
-                <div class="col-sm-4 address">
-                    <strong>Address : </strong>c/o Principal, Degree College Shikaripara ( Sarsajol, Dumka) Jharkhand - 382028
-                </div>
-                <div class="col-sm-4 links">
-                    <div>
-                        <a href="index.php#news">News</a>
-                        <i class="seperator"></i>
-                        <a href="index.php#announcements">Announcement</a>
-                        <i class="seperator"></i>
-                        <a href="index.php#events">Events</a>
-                    </div>
-                    <div>
-                        <a href="index.php">Home</a>
-                        <i class="seperator"></i>
-                        <a href="rti.php">RTI</a>
-                        <i class="seperator"></i>
-                        <a href="pdf/MOU.pdf">MOU</a>
-                    </div>
-                    <div>
-                        <a href="admissions.php">Admission</a>
-                        <i class="seperator"></i>
-                        <a href="student_corner.php">Student</a>
-                        <i class="seperator"></i>
-                        <a href="faculty.php">Faculty</a>
-                    </div>
-                </div>
-                <div class="col-sm-4 footer-social">
-                    <a href="#!"><i class="fa fa-facebook" aria-hidden="true" title="Official Facebook Page"></i></a>
-                    <a href="https://degreecollegeshikaripara.ac.in/"><i class="fa fa-github" aria-hidden="true"
-                                                          title="Github Group"></i></a>
-                    <a href="#!"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn Profile"></i></a>
-                    <a href="#!" title=""><i class="fa fa-twitter" aria-hidden="true"
-                                             title="Official Twitter Account"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <?php include 'footer.php'; ?>   <!-- PHP part -->
 </div>
     <!--Scripts Starts-->
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
