@@ -26,8 +26,11 @@
                 <a href="#" data-toggle="popover" title="Email"
                    data-content="helpdesk@degreecollegeshikaripara.ac.in"
                    data-placement="bottom"><i class="fa fa-envelope fa-lg"></i></a>
-                   <a href="index.php">Home</a></li>
+                <a href="index.php">Home</a>
             </div>
+
+            <!-- ✅ Google Translate Dropdown -->
+            <div id="google_translate_element" style="margin-left:20px;"></div>
         </div>
     </div>
 
@@ -58,34 +61,29 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
                                 <li><a href="bachelor_admission.php">Bachelors</a></li>
-                                <!-- <li><a href="mtech_admission.php">Masters</a></li>
-                                <li><a href="phd_admission.php">Ph.D</a></li> -->
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
                                 <li><a href="faculty.php">Faculty</a></li>
-                                <!-- <li><a href="#" class="disabled" onclick="return false;">Visiting Faculty</a></li> -->
                                 <li><a href="#" class="disabled" onclick="return false;">Staff</a></li>
                             </ul>
                         </li>
-                         <li><a href="student_corner.php">Student's Corner</a></li>
-                     <li> 
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
-    <ul class="dropdown-menu multi-level">
-        <li><a href="#" class="disabled" onclick="return false;">FAQs</a></li>
-        <li><a href="library.php">Library</a></li>
-        <li><a href="#" class="disabled" onclick="return false;">Invited Talks</a></li>
-        <!-- New Items -->
-        <li><a href="college-committees.php">College Committees</a></li>
-        <li><a href="iqac.php">IQAC</a></li>
-        <li><a href="https://samarth.edu.in/" target="_blank">SAMARTH Portal</a></li>
-        <li><a href="https://www.naac.gov.in/" target="_blank">NAAC</a></li>
-        <li><a href="#" class="disabled" onclick="return false;">NSS</a></li>
-    </ul>
-</li>
-
+                        <li><a href="student_corner.php">Student's Corner</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                                <li><a href="#" class="disabled" onclick="return false;">FAQs</a></li>
+                                <li><a href="library.php">Library</a></li>
+                                <li><a href="#" class="disabled" onclick="return false;">Invited Talks</a></li>
+                                <li><a href="college-committees.php">College Committees</a></li>
+                                <li><a href="iqac.php">IQAC</a></li>
+                                <li><a href="https://samarth.edu.in/" target="_blank">SAMARTH Portal</a></li>
+                                <li><a href="https://www.naac.gov.in/" target="_blank">NAAC</a></li>
+                                <li><a href="#" class="disabled" onclick="return false;">NSS</a></li>
+                            </ul>
+                        </li>
                         <li><a href="career.php">Career</a></li>
                         <li><a href="gallery.php">Photo Gallery</a></li>
                     </ul>
@@ -94,3 +92,27 @@
         </div>
     </nav>
 </header>
+
+<!-- ✅ Google Translate Script -->
+<style>
+    .goog-te-banner-frame.skiptranslate { display: none !important; }
+    body { top: 0px !important; }
+    .goog-tooltip, .goog-tooltip:hover { display: none !important; }
+    .goog-text-highlight { background: none !important; box-shadow: none !important; }
+    #google_translate_element select {
+        padding: 4px 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 13px;
+    }
+</style>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'hi,bn',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
