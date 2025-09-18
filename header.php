@@ -56,7 +56,7 @@
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
-                                <li><a href="bachelors_admission.php">Bachelors</a></li>
+                                <li><a href="bachelor_admission.php">Bachelors</a></li>
                                 <!-- <li><a href="mtech_admission.php">Masters</a></li>
                                 <li><a href="phd_admission.php">Ph.D</a></li> -->
                             </ul>
