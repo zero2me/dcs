@@ -1,0 +1,47 @@
+<!-- footer.php -->
+<footer>
+    <div class="footer-wrapper">
+        <span class="logo"><img src="img/college_logo.jpg" alt="College Logo"></span>
+        <div class="row">
+            <!-- Address -->
+            <div class="col-sm-4 address">
+                <strong>Address :</strong> c/o Principal, Degree College Shikaripara (Sarsajol, Dumka) Jharkhand - 382028
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-sm-4 links">
+                <div>
+                    <a href="#news">News</a>
+                    <i class="seperator"></i>
+                    <a href="#announcements">Announcement</a>
+                    <i class="seperator"></i>
+                    <a href="#events">Events</a>
+                </div>
+                <div>
+                    <a href="index.php">Home</a>
+                    <i class="seperator"></i>
+                    <a href="rti.php">RTI</a>
+                    <i class="seperator"></i>
+                    <a href="pdf/MOU.pdf">MOU</a>
+                </div>
+                <div>
+                    <a href="admissions.php">Admission</a>
+                    <i class="seperator"></i>
+                    <a href="student_corner.php">Student</a>
+                    <i class="seperator"></i>
+                    <a href="faculty.php">Faculty</a>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="col-sm-4 footer-social">
+                <a href="#!"><i class="fa fa-facebook" aria-hidden="true" title="Official Facebook Page"></i></a>
+                <a href="https://degreecollegeshikaripara.ac.in/">
+                    <i class="fa fa-github" aria-hidden="true" title="Github Group"></i>
+                </a>
+                <a href="#!"><i class="fa fa-linkedin" aria-hidden="true" title="LinkedIn Profile"></i></a>
+                <a href="#!" title=""><i class="fa fa-twitter" aria-hidden="true" title="Official Twitter Account"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
