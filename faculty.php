@@ -94,32 +94,32 @@
       <div class="faculty-gallery">
 
         <div class="faculty-card">
-          <img src="img/faculty/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
+          <img src="img/gallery/faculty/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
           <p><strong>Prof. Subodh Rajak</strong><br>Principal & Head of Arts Department</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/faculty/varun.jpeg" alt="Prof. Varun" class="responsive-img circle" />
+          <img src="img/gallery/faculty/varun.jpeg" alt="Prof. Varun" class="responsive-img circle" />
           <p><strong>Prof. Varun</strong><br>Assistant Professor</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/faculty/sidhor.jpeg" alt="Prof. Sidhor" class="responsive-img circle" />
+          <img src="img/gallery/faculty/sidhor.jpeg" alt="Prof. Sidhor" class="responsive-img circle" />
           <p><strong>Prof. Sidhor</strong><br>Science Faculty</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/faculty/babita.jpeg" alt="Prof. Babita" class="responsive-img circle" />
+          <img src="img/gallery/faculty/babita.jpeg" alt="Prof. Babita" class="responsive-img circle" />
           <p><strong>Prof. Babita</strong><br>Commerce Faculty</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/faculty/gopal.jpeg" alt="Prof. Gopal" class="responsive-img circle" />
+          <img src="img/gallery/faculty/gopal.jpeg" alt="Prof. Gopal" class="responsive-img circle" />
           <p><strong>Prof. Gopal</strong><br>Assistant Professor</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/faculty/ashok.jpeg" alt="Prof. Ashok" class="responsive-img circle" />
+          <img src="img/gallery/faculty/ashok.jpeg" alt="Prof. Ashok" class="responsive-img circle" />
           <p><strong>Prof. Ashok</strong><br>Assistant Professor</p>
         </div>
 
