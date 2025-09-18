@@ -232,7 +232,7 @@
       </div>
       <div class="sub-faculty">
         <div class="faculty-card">
-          <img src="img/gallery/faculty/rima.jpg" alt="Mrs. Rima Gladis Soren">
+          <img src="img/gallery/faculty/mrima.jpg" alt="Mrs. Rima Gladis Soren">
           <p><strong>Mrs. Rima Gladis Soren</strong><br>Dept. of Commerce</p>
         </div>
       </div>
