@@ -56,26 +56,27 @@
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
-                                <li><a href="btech_admission.php">Bachelors</a></li>
-                                <li><a href="mtech_admission.php">Masters</a></li>
-                                <li><a href="phd_admission.php">Ph.D</a></li>
+                                <li><a href="bachelors_admission.php">Bachelors</a></li>
+                                <!-- <li><a href="mtech_admission.php">Masters</a></li>
+                                <li><a href="phd_admission.php">Ph.D</a></li> -->
                             </ul>
                         </li>
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
                                 <li><a href="faculty.php">Faculty</a></li>
-                                <li><a href="#" class="disabled" onclick="return false;">Visiting Faculty</a></li>
+                                <!-- <li><a href="#" class="disabled" onclick="return false;">Visiting Faculty</a></li> -->
                                 <li><a href="#" class="disabled" onclick="return false;">Staff</a></li>
                             </ul>
                         </li>
+                         <li><a href="student_corner.php">Student's Corner</a></li>
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
-                                <li><a href="faq.php">FAQs</a></li>
-                                <li><a href="student_corner.php">Student's Corner</a></li>
+                                <li><a href="#" class="disabled" onclick="return false;">FAQs</a></li>
+                               
                                 <li><a href="library.php">Library</a></li>
-                                <li><a href="invited_talks.php">Invited Talks</a></li>
+                                <li><a href="#" class="disabled" onclick="return false;">Invited Talks</a></li>
                             </ul>
                         </li>
                         <li><a href="career.php">Career</a></li>
