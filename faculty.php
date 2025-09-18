@@ -84,7 +84,7 @@
   <div class="content faculty-section">
 
     <section id="faculty-gallery" class="faculty-highlight">
-      <h1>Faculty Gallery</h1>
+      <h1 align='center'>Faculty Gallery</h1>
       <p>
         The faculty members of <strong>Degree College, Shikaripara</strong> are dedicated to guiding students 
         with academic excellence, mentorship, and values. Our team represents diverse disciplines, combining 
