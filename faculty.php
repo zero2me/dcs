@@ -123,7 +123,7 @@
 
       <!-- Principal at Top -->
       <div class="faculty-head">
-        <img src="images/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
+        <img src="img/gallery/faculty/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
         <p>
           <strong>Prof. Subodh Rajak</strong><br>
           Principal & Head of Arts Department
@@ -134,27 +134,27 @@
       <div class="faculty-gallery">
 
         <div class="faculty-card">
-          <img src="images/varun.jpeg" alt="Prof. Varun" />
+          <img src="img/gallery/faculty/varun.jpeg" alt="Prof. Varun" />
           <p><strong>Prof. Varun</strong><br>Assistant Professor</p>
         </div>
 
         <div class="faculty-card">
-          <img src="images/sidhor.jpeg" alt="Prof. Sidhor" />
+          <img src="img/gallery/faculty/sidhor.jpeg" alt="Prof. Sidhor" />
           <p><strong>Prof. Sidhor</strong><br>Science Faculty</p>
         </div>
 
         <div class="faculty-card">
-          <img src="images/babita.jpeg" alt="Prof. Babita" />
+          <img src="img/gallery/faculty/babita.jpeg" alt="Prof. Babita" />
           <p><strong>Prof. Babita</strong><br>Commerce Faculty</p>
         </div>
 
         <div class="faculty-card">
-          <img src="images/gopal.jpeg" alt="Prof. Gopal" />
+          <img src="img/gallery/faculty/gopal.jpeg" alt="Prof. Gopal" />
           <p><strong>Prof. Gopal</strong><br>Assistant Professor</p>
         </div>
 
         <div class="faculty-card">
-          <img src="images/ashok.jpeg" alt="Prof. Ashok" />
+          <img src="img/gallery/faculty/ashok.jpeg" alt="Prof. Ashok" />
           <p><strong>Prof. Ashok</strong><br>Assistant Professor</p>
         </div>
 
