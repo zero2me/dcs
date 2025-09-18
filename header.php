@@ -71,15 +71,21 @@
                             </ul>
                         </li>
                          <li><a href="student_corner.php">Student's Corner</a></li>
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
-                            <ul class="dropdown-menu multi-level">
-                                <li><a href="#" class="disabled" onclick="return false;">FAQs</a></li>
-                               
-                                <li><a href="library.php">Library</a></li>
-                                <li><a href="#" class="disabled" onclick="return false;">Invited Talks</a></li>
-                            </ul>
-                        </li>
+                     <li> 
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+    <ul class="dropdown-menu multi-level">
+        <li><a href="#" class="disabled" onclick="return false;">FAQs</a></li>
+        <li><a href="library.php">Library</a></li>
+        <li><a href="#" class="disabled" onclick="return false;">Invited Talks</a></li>
+        <!-- New Items -->
+        <li><a href="college-committees.php">College Committees</a></li>
+        <li><a href="iqac.php">IQAC</a></li>
+        <li><a href="https://samarth.edu.in/" target="_blank">SAMARTH Portal</a></li>
+        <li><a href="https://www.naac.gov.in/" target="_blank">NAAC</a></li>
+        <li><a href="#" class="disabled" onclick="return false;">NSS</a></li>
+    </ul>
+</li>
+
                         <li><a href="career.php">Career</a></li>
                         <li><a href="gallery.php">Photo Gallery</a></li>
                     </ul>
