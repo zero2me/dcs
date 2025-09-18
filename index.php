@@ -21,10 +21,10 @@
             <div class="header-container">
                 <div>
                     <div class="logo-name">
-                        <div class="logo"><a href="index.html" title=""><img src="img/college_logo.jpg"
+                        <div class="logo"><a href="index.php" title=""><img src="img/college_logo.jpg"
                                                                              alt="logo"></a></div>
                         <div class="name">
-                            <a href="index.html" title="">
+                            <a href="index.php" title="">
                                 <h5>Degree College Shikaripara</h5>
                                 <h5 class="primary-color"><a href="http://skmu.ac.in/" target="_blank" class="btn-get-started">A Constituent Unit of S.K.M.University, Dumka, Jharkhand </a></h5>
                             </a>
@@ -58,9 +58,9 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav">
-                             <li><a href="about.html">About</a></li>
+                             <li><a href="about.php">About</a></li>
                             <li>
-                                 <li><a href="principals_message.html">Principal</a></li>
+                                 <li><a href="principals_message.php">Principal</a></li>
                             <li>
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b
                                         class="caret"></b></a>
@@ -68,8 +68,8 @@
                                     <li class="dropdown-submenu">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bachelors</a>
                                         <ul class="dropdown-menu">
-                                            <!-- <li><a href="btech_cse.html">CSE</a></li>
-                                            <li><a href="btech_it.html">IT</a></li> -->
+                                            <!-- <li><a href="btech_cse.php">CSE</a></li>
+                                            <li><a href="btech_it.php">IT</a></li> -->
                                         </ul>
                                     </li>
                                     <li><a href="pdf/academic_calendar_autumn_2015_16.pdf">Academic Calender</a></li>
@@ -80,31 +80,31 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
                                         class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="btech_admission.html">Bachelors</a></li>
-                                    <li><a href="mtech_admission.html">Masters</a></li>
-                                    <li><a href="phd_admission.html">Ph.D</a></li>
+                                    <li><a href="btech_admission.php">Bachelors</a></li>
+                                    <li><a href="mtech_admission.php">Masters</a></li>
+                                    <li><a href="phd_admission.php">Ph.D</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="faculty.html">Faculty</a></li>
-                                    <li><a href="visiting_faculty.html" class="disabled" onclick="return false;" style="pointer-events: none; color: #aaa; cursor: not-allowed;">Visiting Faculty</a></li>
-                                    <li><a href="staff.html" class="disabled" onclick="return false;" style="pointer-events: none; color: #aaa; cursor: not-allowed;">Staff</a></li>
+                                    <li><a href="faculty.php">Faculty</a></li>
+                                    <li><a href="visiting_faculty.php" class="disabled" onclick="return false;" style="pointer-events: none; color: #aaa; cursor: not-allowed;">Visiting Faculty</a></li>
+                                    <li><a href="staff.php" class="disabled" onclick="return false;" style="pointer-events: none; color: #aaa; cursor: not-allowed;">Staff</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
                                         class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="student_corner.html">Student's Corner</a></li>
-                                    <li><a href="library.html">Library</a></li>
-                                    <li><a href="invited_talks.html">Invited Talks</a></li>
+                                    <li><a href="faq.php">FAQs</a></li>
+                                    <li><a href="student_corner.php">Student's Corner</a></li>
+                                    <li><a href="library.php">Library</a></li>
+                                    <li><a href="invited_talks.php">Invited Talks</a></li>
                                 </ul>
                             </li>
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="gallery.html">Photo Gallery</a></li>
+                            <li><a href="career.php">Career</a></li>
+                            <li><a href="gallery.php">Photo Gallery</a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -338,16 +338,16 @@
                     <div>
                         <a href="#">Home</a>
                         <i class="seperator"></i>
-                        <a href="rti.html">RTI</a>
+                        <a href="rti.php">RTI</a>
                         <i class="seperator"></i>
                         <a href="pdf/MOU.pdf">MOU</a>
                     </div>
                     <div>
-                        <a href="admissions.html">Admission</a>
+                        <a href="admissions.php">Admission</a>
                         <i class="seperator"></i>
-                        <a href="student_corner.html">Student</a>
+                        <a href="student_corner.php">Student</a>
                         <i class="seperator"></i>
-                        <a href="faculty.html">Faculty</a>
+                        <a href="faculty.php">Faculty</a>
                     </div>
                 </div>
                 <div class="col-sm-4 footer-social">

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IDegree College Shikaripara | Society Members</title>
+    <title>IIIT-V | Bachelors. CSE</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -22,10 +22,10 @@
                     <div>
                         <div class="logo-name">
                             <div class="logo">
-                                <a href="index.html" title=""><img src="img/college_logo.jpg" alt="logo"></a>
+                                <a href="index.php" title=""><img src="img/college_logo.jpg" alt="logo"></a>
                             </div>
                             <div class="name">
-                                <a href="index.html" title="">
+                                <a href="index.php" title="">
                                     <h5>Degree College Shikaripara</h5>
                                     <h5 class="primary-color"><a href="http://skmu.ac.in/" target="_blank" class="btn-get-started">A Constituent Unit of S.K.M.University, Dumka, Jharkhand </a></h5>
                                 </a>
@@ -52,77 +52,77 @@
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active">
+                                <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="principals_message.html">Principal's Message</a></li>
-                                        <li><a href="bog.html">Board of Governors</a></li>
-                                        <li class="active"><a href="society_members.html">Society Members</a></li>
-                                        <li><a href="academic_council.html">Academic Council</a></li>
-                                        <li><a href="finance_committee.html">Finance Committee</a></li>
-                                        <li><a href="rti.html">RTI</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="principals_message.php">Principal's Message</a></li>
+                                        <li><a href="bog.php">Board of Governors</a></li>
+                                        <li><a href="society_members.php">Society Members</a></li>
+                                        <li><a href="academic_council.php">Academic Council</a></li>
+                                        <li><a href="finance_committee.php">Finance Committee</a></li>
+                                        <li><a href="rti.php">RTI</a></li>
                                         <li><a href="pdf/MOU.pdf">MOU</a></li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linkages</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="linkages/da-iict.html">DA-IICT</a></li>
-                                                <li><a href="linkages/gsfc.html">GSFC</a></li>
-                                                <li><a href="linkages/germi.html">GERMI</a></li>
-                                                <li><a href="linkages/tcs.html">TCS</a></li>
+                                                <li><a href="linkages/da-iict.php">DA-IICT</a></li>
+                                                <li><a href="linkages/gsfc.php">GSFC</a></li>
+                                                <li><a href="linkages/germi.php">GERMI</a></li>
+                                                <li><a href="linkages/tcs.php">TCS</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li class="dropdown-submenu">
+                                        <li class="dropdown-submenu active">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bachelors</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="btech_cse.html">CSE</a></li>
-                                                <li><a href="btech_it.html">IT</a></li>
+                                                <li class="active"><a href="btech_cse.php">CSE</a></li>
+                                                <li><a href="btech_it.php">IT</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masters</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="mtech_cse.html">CSE</a></li>
+                                                <li><a href="mtech_cse.php">CSE</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="phd.html">Ph.D</a></li>
+                                        <li><a href="phd.php">Ph.D</a></li>
                                         <li><a href="pdf/academic_calendar_autumn_2015_16.pdf">Academic Calender</a></li>
-                                       
+                                    
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="btech_admission.html">Bachelors</a></li>
-                                        <li><a href="mtech_admission.html">Masters</a></li>
-                                        <li><a href="phd_admission.html">Ph.D</a></li>
+                                        <li><a href="btech_admission.php">Bachelors</a></li>
+                                        <li><a href="mtech_admission.php">Masters</a></li>
+                                        <li><a href="phd_admission.php">Ph.D</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faculty.html">Faculty</a></li>
-                                        <li><a href="visiting_faculty.html">Visiting Faculty</a></li>
-                                        <li><a href="staff.html">Staff</a></li>
+                                        <li><a href="faculty.php">Faculty</a></li>
+                                        <li><a href="visiting_faculty.php">Visiting Faculty</a></li>
+                                        <li><a href="staff.php">Staff</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="student_corner.html">Student's Corner</a></li>
+                                        <li><a href="faq.php">FAQs</a></li>
+                                        <li><a href="student_corner.php">Student's Corner</a></li>
                                         <li><a href="http://moodle.iiitv.ac.in" target="_blank">Moodle</a></li>
-                                        <li><a href="library.html">Library</a></li>
-                                        <li><a href="invited_talks.html">Invited Talks</a></li>
+                                        <li><a href="library.php">Library</a></li>
+                                        <li><a href="invited_talks.php">Invited Talks</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="gallery.html">Photo Gallery</a></li>
+                                <li><a href="career.php">Career</a></li>
+                                <li><a href="gallery.php">Photo Gallery</a></li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -131,139 +131,48 @@
             </nav>
         </header>
         <!-- /header -->
-        <!-- Contents -->
+        <!-- Content wrapper -->
         <div class="contents-wrapper">
             <!-- Contents starts here -->
-            <div class="content">
-                <h2>First Society Members</h2> The Society Members are responsible for the general, superintendence and control of the affairs of the institute. It also owes the sole responsibility for academic, financial and administrative matters. The Society Members includes eminent personalities from MHRD, State Government, Academia, Industrial partners and other people involved with the institute.
-                <div style="text-align: center;">
-                    <h4><u>List of Members</u></h4>
-                </div>
-                <table class="table table-bordered table-responsive table-hover">
-                    <thead>
-                        <tr>
-                            <th data-field="id">S. No.</th>
-                            <th data-field="name">Name</th>
-                            <th data-field="address">Address</th>
-                            <th data-field="occupation">Occupation</th>
-                            <th data-field="designation">Designation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Shri Ashok Thakur</td>
-                            <td>Secretary, Department of Higher Education, MHRD, Shastri Bhavan, New Delhi</td>
-                            <td>Government Service</td>
-                            <td>Chairman</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Dr. Varesh Sinha</td>
-                            <td>Chief Secretary, Government of Gujarat, Gandhinagar, Gujarat</td>
-                            <td>Government Service</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Amita Sharma</td>
-                            <td>Additional Secretary, Technical Education, Department of Higher Education., MHRD, Shastri Bhavan, New Delhi
-                            </td>
-                            <td>Government Service</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Shri Yogendra Tripathi</td>
-                            <td>Financial Advisor, Department of Higher Education, MHRD, Shastri Bhavan, New Delhi</td>
-                            <td>Government Service</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Shri A. M. Tiwari</td>
-                            <td>Principal Secretary, Education Department, Government of Gujarat, Gandhinagar, Gujarat</td>
-                            <td>Government Service</td>
-                            <td>Member Secretary</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Shri Alok Mishra</td>
-                            <td>Director (IIT) or Joint Secretary (TE), Department of Higher Education, MHRD, Shastri Bhavan, New Delhi
-                            </td>
-                            <td>Government Service</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Shri P. D. Porey</td>
-                            <td>Director, Sardar Vallabhbhai National Institute of Technology, Surat</td>
-                            <td>Government Service</td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td></td>
-                            <td>VC Gujarat Technical University or Director Pandit Deendayal Petroleum University</td>
-                            <td></td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td></td>
-                            <td>Gujarat State Fertilizers and Chemicals Limited, P.O. Fertilizer Nagar,Vadodara, Gujarat - 391750
-                            </td>
-                            <td></td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td></td>
-                            <td>Gujarat Energy Research and Management Institute, 1<sup>st</sup> Floor, Energy Building, PDPU, Gandhinagar, Gujarat - 382007
-                            </td>
-                            <td></td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td></td>
-                            <td>Tata Consultancy Services, Nirmal Building, 9<sup>th</sup> Floor, Nariman Point, Mumbai - 400021</td>
-                            <td></td>
-                            <td>Member</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="contents">
+                <h2>Bachelor of Technology - Computer Science and Engineering</h2
+                <br><br> 
+                The programme is designed to make a strong foundation in CSE that includes electronics and hardware. Computer science courses are introduced in the early semesters while non-IT courses in the later stages. IT workshops are specially designed courses allowing the students to have mastery in the use of the latest software technologies. The courses in mathematics, sciences, engineering and humanities enable students to explore the wider applications of technology.
+                <br/>
+                <br/>
+                <a href="pdf/curriculum_CSE.pdf"><b>AC Approved Curriculum for Bachelors. CSE</b></a>
             </div>
         </div>
+
         <!-- Footer -->
         <footer>
             <div class="footer-wrapper">
                 <span class="logo"><img src="img/college_logo.jpg" alt=""></span>
                 <div class="row">
                     <div class="col-sm-4 address">
-                        <strong>Address : </strong>C/O Principal, Degree College Shikaripara ( Sarsajol, Dumka) Jharkhand - 382028
+                        <strong>Address : </strong> C/O Principal, Degree College Shikaripara ( Sarsajol, Dumka) Jharkhand - 382028
                     </div>
                     <div class="col-sm-4 links">
                         <div>
-                            <a href="index.html#news">News</a>
+                            <a href="index.php#news">News</a>
                             <i class="seperator"></i>
-                            <a href="index.html#announcements">Announcement</a>
+                            <a href="index.php#announcements">Announcement</a>
                             <i class="seperator"></i>
-                            <a href="index.html#events">Events</a>
+                            <a href="index.php#events">Events</a>
                         </div>
                         <div>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                             <i class="seperator"></i>
-                            <a href="rti.html">RTI</a>
+                            <a href="rti.php">RTI</a>
                             <i class="seperator"></i>
                             <a href="pdf/MOU.pdf">MOU</a>
                         </div>
                         <div>
-                            <a href="admissions.html">Admission</a>
+                            <a href="admissions.php">Admission</a>
                             <i class="seperator"></i>
-                            <a href="student_corner.html">Student</a>
+                            <a href="student_corner.php">Student</a>
                             <i class="seperator"></i>
-                            <a href="faculty.html">Faculty</a>
+                            <a href="faculty.php">Faculty</a>
                         </div>
                     </div>
                     <div class="col-sm-4 footer-social">
@@ -279,7 +188,6 @@
             </div>
         </footer>
     </div>
-    <!--Scripts Starts-->
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/434d359724.js"></script>

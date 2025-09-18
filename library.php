@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT-V | Admissions</title>
+    <title>IIIT-V | Library</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -22,10 +22,10 @@
                 <div>
                     <div class="logo-name">
                         <div class="logo">
-                            <a href="index.html" title=""><img src="img/college_logo.jpg" alt="logo"></a>
+                            <a href="index.php" title=""><img src="img/college_logo.jpg" alt="logo"></a>
                         </div>
                         <div class="name">
-                            <a href="index.html" title="">
+                            <a href="index.php" title="">
                                 <h5>Degree College Shikaripara</h5>
                                 <h5 class="primary-color"><a href="http://skmu.ac.in/" target="_blank" class="btn-get-started">A Constituent Unit of S.K.M.University, Dumka, Jharkhand </a></h5>
                             </a>
@@ -33,15 +33,13 @@
                     </div>
                 </div>
                 <div class="header-links">
-                    <a id="loc_icon" href="#" data-toggle="popover" title="Address"
+                    <a href="#" data-toggle="popover" title="Address"
                        data-content="C/O Principal, Degree College Shikaripara ( Sarsajol, Dumka) Jharkhand - 382028"
                        data-placement="bottom"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
-                    <a id="phone_icon" href="#" data-toggle="popover" title="Phone No." data-content="+91-79-29750281"
+                    <a href="#" data-toggle="popover" title="Phone No." data-content="+91-79-29750281"
                        data-placement="bottom"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
-                    <a id="email_icon" href="#" data-toggle="popover" title="Email"
-                       data-content="helpdesk@degreecollegeshikaripara.ac.in" data-placement="bottom"><i
-                            class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
-
+                    <a href="#" data-toggle="popover" title="Email" data-content="helpdesk@degreecollegeshikaripara.ac.in"
+                       data-placement="bottom"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -63,21 +61,21 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b
                                         class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="principals_message.html">Principal's Message</a></li>
-                                    <li><a href="bog.html">Board of Governors</a></li>
-                                    <li><a href="society_members.html">Society Members</a></li>
-                                    <li><a href="academic_council.html">Academic Council</a></li>
-                                    <li><a href="finance_committee.html">Finance Committee</a></li>
-                                    <li><a href="rti.html">RTI</a></li>
+                                    <li><a href="about.php">About</a></li>
+                                    <li><a href="principals_message.php">Principal's Message</a></li>
+                                    <li><a href="bog.php">Board of Governors</a></li>
+                                    <li><a href="society_members.php">Society Members</a></li>
+                                    <li><a href="academic_council.php">Academic Council</a></li>
+                                    <li><a href="finance_committee.php">Finance Committee</a></li>
+                                    <li><a href="rti.php">RTI</a></li>
                                     <li><a href="pdf/MOU.pdf">MOU</a></li>
                                     <li class="dropdown-submenu">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linkages</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="linkages/da-iict.html">DA-IICT</a></li>
-                                            <li><a href="linkages/gsfc.html">GSFC</a></li>
-                                            <li><a href="linkages/germi.html">GERMI</a></li>
-                                            <li><a href="linkages/tcs.html">TCS</a></li>
+                                            <li><a href="linkages/da-iict.php">DA-IICT</a></li>
+                                            <li><a href="linkages/gsfc.php">GSFC</a></li>
+                                            <li><a href="linkages/germi.php">GERMI</a></li>
+                                            <li><a href="linkages/tcs.php">TCS</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -89,50 +87,51 @@
                                     <li class="dropdown-submenu">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bachelors</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="btech_cse.html">CSE</a></li>
-                                            <li><a href="btech_it.html">IT</a></li>
+                                            <li><a href="btech_cse.php">CSE</a></li>
+                                            <li><a href="btech_it.php">IT</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masters</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="mtech_cse.html">CSE</a></li>
+                                            <li><a href="mtech_cse.php">CSE</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="phd.html">Ph.D</a></li>
+                                    <li><a href="phd.php">Ph.D</a></li>
                                     <li><a href="pdf/academic_calendar_autumn_2015_16.pdf">Academic Calender</a></li>
+
                                 </ul>
                             </li>
-                            <li class="active">
+                            <li>
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
                                         class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="btech_admission.html">Bachelors</a></li>
-                                    <li><a href="mtech_admission.html">Masters</a></li>
-                                    <li><a href="phd_admission.html">Ph.D</a></li>
+                                    <li><a href="btech_admission.php">Bachelors</a></li>
+                                    <li><a href="mtech_admission.php">Masters</a></li>
+                                    <li><a href="phd_admission.php">Ph.D</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="faculty.html">Faculty</a></li>
-                                    <li><a href="visiting_faculty.html">Visiting Faculty</a></li>
-                                    <li><a href="staff.html">Staff</a></li>
+                                    <li><a href="faculty.php">Faculty</a></li>
+                                    <li><a href="visiting_faculty.php">Visiting Faculty</a></li>
+                                    <li><a href="staff.php">Staff</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
                                         class="caret"></b></a>
                                 <ul class="dropdown-menu multi-level">
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="student_corner.html">Student's Corner</a></li>
+                                    <li><a href="faq.php">FAQs</a></li>
+                                    <li><a href="student_corner.php">Student's Corner</a></li>
                                     <li><a href="http://moodle.iiitv.ac.in" target="_blank">Moodle</a></li>
-                                    <li><a href="library.html">Library</a></li>
-                                    <li><a href="invited_talks.html">Invited Talks</a></li>
+                                    <li class="active"><a href="library.php">Library</a></li>
+                                    <li><a href="invited_talks.php">Invited Talks</a></li>
                                 </ul>
                             </li>
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="gallery.html">Photo Gallery</a></li>
+                            <li><a href="career.php">Career</a></li>
+                            <li><a href="gallery.php">Photo Gallery</a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -142,32 +141,28 @@
     </header>
     <!-- /header -->
     <!-- Content wrapper -->
-    <div class="container data top-margin-50px bottom-margin-50px">
-        <h3>Admissions</h3>
-        <br/><br/>
-        <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <a href="btech_admission.html">
-                    Bachelors. Admissions
-                </a>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <a href="mtech_admission.html">
-                    Masters. Admissions
-                </a>
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4">
-                <a href="phd_admission.html">
-                    PhD Admissions
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Content wrapper -->
     <div class="contents-wrapper">
         <!-- Contents starts here -->
         <div class="content">
-
+            <h1>Library</h1>
+            <br/><br/>
+            <p>
+                The primary aim of IDegree College Shikaripara Library is to support research, teaching and learning of the institute
+                community. The Library is one of the central support services of IDegree College Shikaripara. The mission of the
+                Library is to provide information services and access to full text digital and printed resources to
+                support the scholarly and informational needs of faculty, students and staff. The Library is in fast
+                growing stage. It was started in December 2015 with approximately 350 books. In March 2016 Library
+                subscribed online <a href="http://dl.acm.org/">ACM Digital library</a> database. During this short span
+                of time, the library has acquired a good number of books and electronic resources. The library has a good
+                collection of books on Computer Science, Information Technology, Physics, Mathematics, Humanities &
+                Social Sciences and also technical and general print magazines. The collection includes reference books,
+                text books, CDs etc. We are constantly in a process of increasing our collection of books further.
+            </p>
+            <p>
+                Students must follow the rules and regulations mentioned in the
+                <a href="pdf/library-circulation.pdf">Library
+                    Circulation Policy</a>.
+            </p>
         </div>
     </div>
     <!-- Footer -->
@@ -180,25 +175,25 @@
                 </div>
                 <div class="col-sm-4 links">
                     <div>
-                        <a href="index.html#news">News</a>
+                        <a href="index.php#news">News</a>
                         <i class="seperator"></i>
-                        <a href="index.html#announcements">Announcement</a>
+                        <a href="index.php#announcements">Announcement</a>
                         <i class="seperator"></i>
-                        <a href="index.html#events">Events</a>
+                        <a href="index.php#events">Events</a>
                     </div>
                     <div>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                         <i class="seperator"></i>
-                        <a href="rti.html">RTI</a>
+                        <a href="rti.php">RTI</a>
                         <i class="seperator"></i>
                         <a href="pdf/MOU.pdf">MOU</a>
                     </div>
                     <div>
-                        <a href="admissions.html">Admission</a>
+                        <a href="admissions.php">Admission</a>
                         <i class="seperator"></i>
-                        <a href="student_corner.html">Student</a>
+                        <a href="student_corner.php">Student</a>
                         <i class="seperator"></i>
-                        <a href="faculty.html">Faculty</a>
+                        <a href="faculty.php">Faculty</a>
                     </div>
                 </div>
                 <div class="col-sm-4 footer-social">
@@ -218,33 +213,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/434d359724.js"></script>
 <script>
-    $(document).on('click', function (e) {
-        var
-                $popover,
-                $target = $(e.target);
-
-        //do nothing if there was a click on popover content
-        if ($target.hasClass('popover') || $target.closest('.popover').length) {
-            return;
-        }
-
-        $('[data-toggle="popover"]').each(function () {
-            $popover = $(this);
-
-            if (!$popover.is(e.target) &&
-                    $popover.has(e.target).length === 0 &&
-                    $('.popover').has(e.target).length === 0) {
-                $popover.popover('hide');
-            } else {
-                //fixes issue described above
-                $popover.popover('toggle');
-            }
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on('click', function (e) {
+            $('[data-toggle="popover"]').not(this).popover('hide');
         });
-    })
-
-
+    });
 </script>
 </body>
-
 
 </html>

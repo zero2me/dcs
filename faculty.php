@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT-V | Staff</title>
+    <title>IIIT-V | Faculty</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -22,10 +22,10 @@
                     <div>
                         <div class="logo-name">
                             <div class="logo">
-                                <a href="index.html" title=""><img src="img/college_logo.jpg" alt="logo"></a>
+                                <a href="index.php" title=""><img src="img/college_logo.jpg" alt="logo"></a>
                             </div>
                             <div class="name">
-                                <a href="index.html" title="">
+                                <a href="index.php" title="">
                                     <h5>Degree College Shikaripara</h5>
                                     <h5 class="primary-color"><a href="http://skmu.ac.in/" target="_blank" class="btn-get-started">A Constituent Unit of S.K.M.University, Dumka, Jharkhand </a></h5>
                                 </a>
@@ -56,21 +56,21 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b
                                         class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="principals_message.html">Principal's Message</a></li>
-                                        <li><a href="bog.html">Board of Governors</a></li>
-                                        <li><a href="society_members.html">Society Members</a></li>
-                                        <li><a href="academic_council.html">Academic Council</a></li>
-                                        <li><a href="finance_committee.html">Finance Committee</a></li>
-                                        <li><a href="rti.html">RTI</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="principals_message.php">Principal's Message</a></li>
+                                        <li><a href="bog.php">Board of Governors</a></li>
+                                        <li><a href="society_members.php">Society Members</a></li>
+                                        <li><a href="academic_council.php">Academic Council</a></li>
+                                        <li><a href="finance_committee.php">Finance Committee</a></li>
+                                        <li><a href="rti.php">RTI</a></li>
                                         <li><a href="pdf/MOU.pdf">MOU</a></li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linkages</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="linkages/da-iict.html">DA-IICT</a></li>
-                                                <li><a href="linkages/gsfc.html">GSFC</a></li>
-                                                <li><a href="linkages/germi.html">GERMI</a></li>
-                                                <li><a href="linkages/tcs.html">TCS</a></li>
+                                                <li><a href="linkages/da-iict.php">DA-IICT</a></li>
+                                                <li><a href="linkages/gsfc.php">GSFC</a></li>
+                                                <li><a href="linkages/germi.php">GERMI</a></li>
+                                                <li><a href="linkages/tcs.php">TCS</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -82,17 +82,17 @@
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bachelors</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="btech_cse.html">CSE</a></li>
-                                                <li><a href="btech_it.html">IT</a></li>
+                                                <li><a href="btech_cse.php">CSE</a></li>
+                                                <li><a href="btech_it.php">IT</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masters</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="mtech_cse.html">CSE</a></li>
+                                                <li><a href="mtech_cse.php">CSE</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="phd.html">Ph.D</a></li>
+                                        <li><a href="phd.php">Ph.D</a></li>
                                         <li><a href="pdf/academic_calendar_autumn_2015_16.pdf">Academic Calender</a></li>
                                         
                                     </ul>
@@ -101,32 +101,32 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
                                         class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="btech_admission.html">Bachelors</a></li>
-                                        <li><a href="mtech_admission.html">Masters</a></li>
-                                        <li><a href="phd_admission.html">Ph.D</a></li>
+                                        <li><a href="btech_admission.php">Bachelors</a></li>
+                                        <li><a href="mtech_admission.php">Masters</a></li>
+                                        <li><a href="phd_admission.php">Ph.D</a></li>
                                     </ul>
                                 </li>
                                 <li class="active">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faculty.html">Faculty</a></li>
-                                        <li><a href="visiting_faculty.html">Visiting Faculty</a></li>
-                                        <li class="active"><a href="staff.html">Staff</a></li>
+                                        <li class="active"><a href="faculty.php">Faculty</a></li>
+                                        <li><a href="visiting_faculty.php">Visiting Faculty</a></li>
+                                        <li><a href="staff.php">Staff</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
                                         class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="student_corner.html">Student's Corner</a></li>
+                                        <li><a href="faq.php">FAQs</a></li>
+                                        <li><a href="student_corner.php">Student's Corner</a></li>
                                         <li><a href="http://moodle.iiitv.ac.in" target="_blank">Moodle</a></li>
-                                        <li><a href="library.html">Library</a></li>
-                                        <li><a href="invited_talks.html">Invited Talks</a></li>
+                                        <li><a href="library.php">Library</a></li>
+                                        <li><a href="invited_talks.php">Invited Talks</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="gallery.html">Photo Gallery</a></li>
+                                <li><a href="career.php">Career</a></li>
+                                <li><a href="gallery.php">Photo Gallery</a></li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -138,96 +138,177 @@
         <!-- Content wrapper -->
         <div class="contents-wrapper">
             <!-- Contents starts here -->
-            <div class="content staff-members">
-                <h1>Staff Members</h1>
+            <!-- <div class="content faculty-list">
+                <h1>Faculty</h1>
                 <br>
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <h3>Mr. C.P. Joglekar </h3>
+                        <h3><a href="faculty/dks001.php">Dhirendra Sinha</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/CPJ.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/DKS.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                <b>Registrar</b>
-                                <br/> Contact : <b>registrar@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (Physics)
+                                <br/> IIT Kanpur
+                                <br/>
+                                <b>Areas of Interest : </b>Physics of organic semiconductor devices, in particular, organic light-emitting diodes and solar cells. Hybrid devices involving organic materials embedded with inorganic nano-particles. Understanding physical processes such as charge-carrier transport and recombination in the practical devices.
+                                <br/> Contact : <b>dhirendra.sinha@degreecollegeshikaripara.ac.in</b>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h3>Mrs. Namrata Bhouraskar</h3>
+                        <h3> <a href="faculty/pps001.php">Pratik Shah</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/NAMRATA.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/pratik.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                Secretary to Registrar cum Accountant
-                                <br/> Contact : <b>namrata@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (Computer Vision)
+                                <br/> DA-IICT
+                                <br/>
+                                <b>Areas of Interest : </b>Differential Geometry, Signal Processing, Scientific Computing.
+                                <br/> Contact : <b>pratik@degreecollegeshikaripara.ac.in</b>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h3>Mr. N.D. Raval  </h3>
+                        <h3><a href="faculty/bnc001.php">Barnali Chetia</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/nigam.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/barnali.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                Jr. Technical Superintendent
-                                <br/> Contact : <b>ndraval@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (Linguistics)
+                                <br/> JNU New Delhi
+                                <br/>
+                                <b>Areas of Interest : </b>Applied Linguistics, Sociolinguistics, Discourse Analysis, Gender Studies, Technical Communication.
+                                <br/> Contact : <b>barnali@degreecollegeshikaripara.ac.in</b>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h3>Mr. Jitu Sharma </h3>
+                        <h3><a href="faculty/aaj001.php">Ajay Nath</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/jitu.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/Ajaynath.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                Jr. Technical Superintendent
-                                <br/> Contact : <b>jitusharma@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (Physics)
+                                <br/> IIT Patna
+                                <br/>
+                                <b>Areas of Interest : </b> Cigar-shaped Bose-Einstein condensate, Optical Lattices, Solitons, Many-body physics.
+                                <br/> Contact : <b>ajay.nath@degreecollegeshikaripara.ac.in</b>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h3>Mr. Jaykumar Joshi  </h3>
+                        <h3><a href="faculty/krj001.php">Kamal Kishor Jha</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/JaykumarJoshi.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/Kamal.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                Library Trainee
-                                <br/> Contact : <b>jay.joshi@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (VLSI Design)
+                                <br/> ABV-IIITM, Gwalior
+                                <br/>
+                                <b>Areas of Interest : </b> Device-Circuit Co-Design, Hybrid Device-Circuit Interaction, Novel Semiconductor Device Design and Modeling.
+                                <br/> Contact : <b>kamal@degreecollegeshikaripara.ac.in</b>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h3>Ms. Darshana Rana  </h3>
+                        <h3><a href="faculty/jsb001.php">Jignesh S. Bhatt</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/darshana.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/Jignesh.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                Administrative Assistant
-                                <br/> Contact : <b>darshana@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (Information and Communication Technology)
+                                <br/> DA-IICT
+                                <br/>
+                                <b>Areas of Interest : </b> Signal and image processing, Remote sensing, Inverse problems in imaging.
+                                <br/> Contact : <b>jignesh.bhatt@degreecollegeshikaripara.ac.in</b>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item">
-                        <h3>Mr. Yogesh Gameti </h3>
+                        <h3><a href="faculty/aap001.php">Ashish Phophalia</a></h3>
                         <div class="row">
-                            <div class="col-sm-4 col-md-4 col-lg-4">
-                                <img src="img/yogesh.jpg">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/ashish_phophalia.jpg">
                             </div>
                             <div class="col-sm-10 col-md-10 col-lg-10">
-                                Messenger cum Peon
-                                <br/> Contact : <b>yogesh@degreecollegeshikaripara.ac.in</b>
+                                Ph.D. (Information and Communication Technology)
+                                <br/> DA-IICT
+                                <br/>
+                                <b>Areas of Interest : </b> Image Processing, Pattern Recognition, Medical Image Analysis.
+                                <br/> Contact : <b>ashish_p@degreecollegeshikaripara.ac.in</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><a href="faculty/nkc001.php">Naveen Kumar</a></h3>
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/Naveen.jpg">
+                            </div>
+                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                MTech, Ph.D. (Pursuing)
+                                <br/> DA-IICT
+                                <br/>
+                                <b>Areas of Interest : </b> Information security.
+                                <br/> Contact : <b>naveen_kumar@degreecollegeshikaripara.ac.in</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><a href="faculty/sal001.php"> Swapnil A. Lokhande</a></h3>
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/swapnil.jpg">
+                            </div>
+                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                Ph.D. (Mathematics)
+                                <br/> IIT Bombay
+                                <br/>
+                                <b>Areas of Interest : </b> Commutative Algebra.
+                                <br/> Contact : <b>swapnil@degreecollegeshikaripara.ac.in</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><a href="faculty/pag001.php">Parth Gupta</a></h3>
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/Parth.jpg">
+                            </div>
+                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                Ph.D. (Pursuing)
+                                <br/> Technical University of Valencia (UPV), Spain
+                                <br/>
+                                <b>Areas of Interest : </b> Information Retrieval, Machine Learning.
+                                <br/> Contact : <b>pgupta@degreecollegeshikaripara.ac.in</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><a href="faculty/bca001.php">Bhargab Chattopadhyay</a></h3>
+                        <div class="row">
+                            <div class="col-sm-2 col-md-2 col-lg-2">
+                                <img src="img/no_photo.jpg" style="max-width: 100px;">
+                            </div>
+                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                Ph.D.(Statistics)
+                                <br/> University of Connecticut, USA    
+                                <br/>
+                                <b>Areas of Interest : </b>  Statistics.
+                                <br/> Contact : 
                             </div>
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <!-- Footer -->
         <footer>
@@ -239,25 +320,25 @@
                     </div>
                     <div class="col-sm-4 links">
                         <div>
-                            <a href="index.html#news">News</a>
+                            <a href="index.php#news">News</a>
                             <i class="seperator"></i>
-                            <a href="index.html#announcements">Announcement</a>
+                            <a href="index.php#announcements">Announcement</a>
                             <i class="seperator"></i>
-                            <a href="index.html#events">Events</a>
+                            <a href="index.php#events">Events</a>
                         </div>
                         <div>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                             <i class="seperator"></i>
-                            <a href="rti.html">RTI</a>
+                            <a href="rti.php">RTI</a>
                             <i class="seperator"></i>
                             <a href="pdf/MOU.pdf">MOU</a>
                         </div>
                         <div>
-                            <a href="admissions.html">Admission</a>
+                            <a href="admissions.php">Admission</a>
                             <i class="seperator"></i>
-                            <a href="student_corner.html">Student</a>
+                            <a href="student_corner.php">Student</a>
                             <i class="seperator"></i>
-                            <a href="faculty.html">Faculty</a>
+                            <a href="faculty.php">Faculty</a>
                         </div>
                     </div>
                     <div class="col-sm-4 footer-social">

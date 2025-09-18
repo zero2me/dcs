@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT-V | Bachelors. Admissions</title>
+    <title>IIIT-V | Student's Corner</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -22,10 +22,10 @@
                     <div>
                         <div class="logo-name">
                             <div class="logo">
-                                <a href="index.html" title=""><img src="img/college_logo.jpg" alt="logo"></a>
+                                <a href="index.php" title=""><img src="img/college_logo.jpg" alt="logo"></a>
                             </div>
                             <div class="name">
-                                <a href="index.html" title="">
+                                <a href="index.php" title="">
                                     <h5>Degree College Shikaripara</h5>
                                     <h5 class="primary-color"><a href="http://skmu.ac.in/" target="_blank" class="btn-get-started">A Constituent Unit of S.K.M.University, Dumka, Jharkhand </a></h5>
                                 </a>
@@ -53,80 +53,76 @@
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li>
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b
-                                        class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="principals_message.html">Principal's Message</a></li>
-                                        <li><a href="bog.html">Board of Governors</a></li>
-                                        <li><a href="society_members.html">Society Members</a></li>
-                                        <li><a href="academic_council.html">Academic Council</a></li>
-                                        <li><a href="finance_committee.html">Finance Committee</a></li>
-                                        <li><a href="rti.html">RTI</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="principals_message.php">Principal's Message</a></li>
+                                        <li><a href="bog.php">Board of Governors</a></li>
+                                        <li><a href="society_members.php">Society Members</a></li>
+                                        <li><a href="academic_council.php">Academic Council</a></li>
+                                        <li><a href="finance_committee.php">Finance Committee</a></li>
+                                        <li><a href="rti.php">RTI</a></li>
                                         <li><a href="pdf/MOU.pdf">MOU</a></li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linkages</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="linkages/da-iict.html">DA-IICT</a></li>
-                                                <li><a href="linkages/gsfc.html">GSFC</a></li>
-                                                <li><a href="linkages/germi.html">GERMI</a></li>
-                                                <li><a href="linkages/tcs.html">TCS</a></li>
+                                                <li><a href="linkages/da-iict.php">DA-IICT</a></li>
+                                                <li><a href="linkages/gsfc.php">GSFC</a></li>
+                                                <li><a href="linkages/germi.php">GERMI</a></li>
+                                                <li><a href="linkages/tcs.php">TCS</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b
-                                        class="caret"></b></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li class="dropdown-submenu active">
+                                        <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bachelors</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="btech_cse.html">CSE</a></li>
-                                                <li class="active"><a href="btech_it.html">IT</a></li>
+                                                <li><a href="btech_cse.php">CSE</a></li>
+                                                <li><a href="btech_it.php">IT</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masters</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="mtech_cse.html">CSE</a></li>
+                                                <li><a href="mtech_cse.php">CSE</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="phd.html">Ph.D</a></li>
+                                        <li><a href="phd.php">Ph.D</a></li>
                                         <li><a href="pdf/academic_calendar_autumn_2015_16.pdf">Academic Calender</a></li>
-                                
+                                        
                                     </ul>
                                 </li>
-                                <li class="active">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b
-                                        class="caret"></b></a>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li class="active"><a href="btech_admission.html">Bachelors</a></li>
-                                        <li><a href="mtech_admission.html">Masters</a></li>
-                                        <li><a href="phd_admission.html">Ph.D</a></li>
+                                        <li><a href="btech_admission.php">Bachelors</a></li>
+                                        <li><a href="mtech_admission.php">Masters</a></li>
+                                        <li><a href="phd_admission.php">Ph.D</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faculty.html">Faculty</a></li>
-                                        <li><a href="visiting_faculty.html">Visiting Faculty</a></li>
-                                        <li><a href="staff.html">Staff</a></li>
+                                        <li><a href="faculty.php">Faculty</a></li>
+                                        <li><a href="visiting_faculty.php">Visiting Faculty</a></li>
+                                        <li><a href="staff.php">Staff</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b
-                                        class="caret"></b></a>
+                                <li class="active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="student_corner.html">Student's Corner</a></li>
+                                        <li><a href="faq.php">FAQs</a></li>
+                                        <li class="active"><a href="student_corner.php">Student's Corner</a></li>
                                         <li><a href="http://moodle.iiitv.ac.in" target="_blank">Moodle</a></li>
-                                        <li><a href="library.html">Library</a></li>
-                                        <li><a href="invited_talks.html">Invited Talks</a></li>
+                                        <li><a href="library.php">Library</a></li>
+                                        <li><a href="invited_talks.php">Invited Talks</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="gallery.html">Photo Gallery</a></li>
+                                <li><a href="career.php">Career</a></li>
+                                <li><a href="gallery.php">Photo Gallery</a></li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -139,18 +135,11 @@
         <div class="contents-wrapper">
             <!-- Contents starts here -->
             <div class="content">
-                <h2>Bachelors. Admissions</h2>
-                <br/> Admissions to the four year Bachelors. Program in both the branches (IT & CSE) of the Institute is made through the examination conducted by CBSE under the name and style of JEE (Main). Official Notification of this examination is given wide publicity through national dailies during September-December every year. The examination is scheduled usually in May the following year and held at several centers spread over the entire length and breadth of the country. Based upon the merit in the written examination, Central Counseling Board of JEE (Main) invites candidates for counseling at selected centers and seats for various participating institutions are allotted, based upon individual merit.
-                <br/>
-                <br/> Details about cutoffs are available at <a href="http://www.csab.nic.in/">CSAB website</a>. For any queries or details related to admissions, <a href="mailto:admissions@degreecollegeshikaripara.ac.in"> e-mail us</a>.
-                <br/>
-                <br/>
-                <h3>Bachelors. (CSE/IT) Fees Structure </h3>
-                <center>
-                    <img src="img/2015-2016new.jpg" style="width:100%;" />
-                    <img src="img/2014-2015new.jpg" style="width:100%;" />
-                    <img src="img/2013-2014new.jpg" style="width:100%;" />
-                </center>
+                <h3>Student's Corner</h3>
+                <br/><br/>
+                <p>
+                    <a href="pdf/IIITV-Regulations.pdf" target="_blank">Rules and Regulations</a>
+                </p>
             </div>
         </div>
         <!-- Footer -->
@@ -163,25 +152,25 @@
                     </div>
                     <div class="col-sm-4 links">
                         <div>
-                            <a href="index.html#news">News</a>
+                            <a href="index.php#news">News</a>
                             <i class="seperator"></i>
-                            <a href="index.html#announcements">Announcement</a>
+                            <a href="index.php#announcements">Announcement</a>
                             <i class="seperator"></i>
-                            <a href="index.html#events">Events</a>
+                            <a href="index.php#events">Events</a>
                         </div>
                         <div>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                             <i class="seperator"></i>
-                            <a href="rti.html">RTI</a>
+                            <a href="rti.php">RTI</a>
                             <i class="seperator"></i>
                             <a href="pdf/MOU.pdf">MOU</a>
                         </div>
                         <div>
-                            <a href="admissions.html">Admission</a>
+                            <a href="admissions.php">Admission</a>
                             <i class="seperator"></i>
-                            <a href="student_corner.html">Student</a>
+                            <a href="student_corner.php">Student</a>
                             <i class="seperator"></i>
-                            <a href="faculty.html">Faculty</a>
+                            <a href="faculty.php">Faculty</a>
                         </div>
                     </div>
                     <div class="col-sm-4 footer-social">

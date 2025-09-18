@@ -134,25 +134,25 @@
                     </div>
                     <div class="col-sm-4 links">
                         <div>
-                            <a href="index.html#news">News</a>
+                            <a href="index.php#news">News</a>
                             <i class="seperator"></i>
-                            <a href="index.html#announcements">Announcement</a>
+                            <a href="index.php#announcements">Announcement</a>
                             <i class="seperator"></i>
-                            <a href="index.html#events">Events</a>
+                            <a href="index.php#events">Events</a>
                         </div>
                         <div>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                             <i class="seperator"></i>
-                            <a href="rti.html">RTI</a>
+                            <a href="rti.php">RTI</a>
                             <i class="seperator"></i>
                             <a href="pdf/MOU.pdf">MOU</a>
                         </div>
                         <div>
-                            <a href="admissions.html">Admission</a>
+                            <a href="admissions.php">Admission</a>
                             <i class="seperator"></i>
-                            <a href="student_corner.html">Student</a>
+                            <a href="student_corner.php">Student</a>
                             <i class="seperator"></i>
-                            <a href="faculty.html">Faculty</a>
+                            <a href="faculty.php">Faculty</a>
                         </div>
                     </div>
                     <div class="col-sm-4 footer-social">

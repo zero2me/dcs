@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IDegree College Shikaripara | Academic Council</title>
+    <title>IIIT-V | RTI</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -22,10 +22,10 @@
                     <div>
                         <div class="logo-name">
                             <div class="logo">
-                                <a href="index.html" title=""><img src="img/college_logo.jpg" alt="logo"></a>
+                                <a href="index.php" title=""><img src="img/college_logo.jpg" alt="logo"></a>
                             </div>
                             <div class="name">
-                                <a href="index.html" title="">
+                                <a href="index.php" title="">
                                     <h5>Degree College Shikaripara</h5>
                                     <h5 class="primary-color"><a href="http://skmu.ac.in/" target="_blank" class="btn-get-started">A Constituent Unit of S.K.M.University, Dumka, Jharkhand </a></h5>
                                 </a>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="header-links">
-                        <a href="#" id="xyz" data-toggle="popover" title="Address" data-content="C/O Principal, Degree College Shikaripara ( Sarsajol, Dumka) Jharkhand - 382028" data-placement="bottom"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
+                        <a href="#" data-toggle="popover" title="Address" data-content="C/O Principal, Degree College Shikaripara ( Sarsajol, Dumka) Jharkhand - 382028" data-placement="bottom"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></a>
                         <a href="#" data-toggle="popover" title="Phone No." data-content="+91-79-29750281" data-placement="bottom"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></a>
                         <a href="#" data-toggle="popover" title="Email" data-content="helpdesk@degreecollegeshikaripara.ac.in" data-placement="bottom"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
                     </div>
@@ -55,21 +55,21 @@
                                 <li class="active">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institute <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="principals_message.html">Principal's Message</a></li>
-                                        <li><a href="bog.html">Board of Governors</a></li>
-                                        <li><a href="society_members.html">Society Members</a></li>
-                                        <li class="active"><a href="academic_council.html">Academic Council</a></li>
-                                        <li><a href="finance_committee.html">Finance Committee</a></li>
-                                        <li><a href="rti.html">RTI</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="principals_message.php">Principal's Message</a></li>
+                                        <li><a href="bog.php">Board of Governors</a></li>
+                                        <li><a href="society_members.php">Society Members</a></li>
+                                        <li><a href="academic_council.php">Academic Council</a></li>
+                                        <li><a href="finance_committee.php">Finance Committee</a></li>
+                                        <li class="active"><a href="rti.php">RTI</a></li>
                                         <li><a href="pdf/MOU.pdf">MOU</a></li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linkages</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="linkages/da-iict.html">DA-IICT</a></li>
-                                                <li><a href="linkages/gsfc.html">GSFC</a></li>
-                                                <li><a href="linkages/germi.html">GERMI</a></li>
-                                                <li><a href="linkages/tcs.html">TCS</a></li>
+                                                <li><a href="linkages/da-iict.php">DA-IICT</a></li>
+                                                <li><a href="linkages/gsfc.php">GSFC</a></li>
+                                                <li><a href="linkages/germi.php">GERMI</a></li>
+                                                <li><a href="linkages/tcs.php">TCS</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -80,17 +80,17 @@
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bachelors</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="btech_cse.html">CSE</a></li>
-                                                <li><a href="btech_it.html">IT</a></li>
+                                                <li><a href="btech_cse.php">CSE</a></li>
+                                                <li><a href="btech_it.php">IT</a></li>
                                             </ul>
                                         </li>
                                         <li class="dropdown-submenu">
                                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masters</a>
                                             <ul class="dropdown-menu">
-                                                <li><a href="mtech_cse.html">CSE</a></li>
+                                                <li><a href="mtech_cse.php">CSE</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="phd.html">Ph.D</a></li>
+                                        <li><a href="phd.php">Ph.D</a></li>
                                         <li><a href="pdf/academic_calendar_autumn_2015_16.pdf">Academic Calender</a></li>
                                         
                                     </ul>
@@ -98,31 +98,31 @@
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="btech_admission.html">Bachelors</a></li>
-                                        <li><a href="mtech_admission.html">Masters</a></li>
-                                        <li><a href="phd_admission.html">Ph.D</a></li>
+                                        <li><a href="btech_admission.php">Bachelors</a></li>
+                                        <li><a href="mtech_admission.php">Masters</a></li>
+                                        <li><a href="phd_admission.php">Ph.D</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">People <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faculty.html">Faculty</a></li>
-                                        <li><a href="visiting_faculty.html">Visiting Faculty</a></li>
-                                        <li><a href="staff.html">Staff</a></li>
+                                        <li><a href="faculty.php">Faculty</a></li>
+                                        <li><a href="visiting_faculty.php">Visiting Faculty</a></li>
+                                        <li><a href="staff.php">Staff</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
                                     <ul class="dropdown-menu multi-level">
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="student_corner.html">Student's Corner</a></li>
+                                        <li><a href="faq.php">FAQs</a></li>
+                                        <li><a href="student_corner.php">Student's Corner</a></li>
                                         <li><a href="http://moodle.iiitv.ac.in" target="_blank">Moodle</a></li>
-                                        <li><a href="library.html">Library</a></li>
-                                        <li><a href="invited_talks.html">Invited Talks</a></li>
+                                        <li><a href="library.php">Library</a></li>
+                                        <li><a href="invited_talks.php">Invited Talks</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="gallery.html">Photo Gallery</a></li>
+                                <li><a href="career.php">Career</a></li>
+                                <li><a href="gallery.php">Photo Gallery</a></li>
                             </ul>
                         </div>
                         <!--/.nav-collapse -->
@@ -131,100 +131,13 @@
             </nav>
         </header>
         <!-- /header -->
-        <!-- Contents -->
+        <!-- Content wrapper -->
         <div class="contents-wrapper">
             <!-- Contents starts here -->
             <div class="content">
-                <h2>Academic Council</h2> It is the principal academic body of the institue. It is responsible for maintenance of standards of instruction, education, research and examination within the institue.
-                <div style="text-align: center;">
-                    <h4>
-                    <br/>
-                    <u>Members of Academic Council</u>
-                </h4>
-                </div>
-                <table class="table table-bordered table-responsive table-hover">
-                    <thead>
-                        <tr>
-                            <th data-field="id">S. No.</th>
-                            <th data-field="name">Name</th>
-                            <th data-field="role">Role</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                Prof R. Nagaraj,
-                                <br/>Director DA-IICT
-                            </td>
-                            <td>Chairman</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                Prof G Sivakumar,
-                                <br/>CSE, IIT-Bombay
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                Prof C Pandu Rangan,
-                                <br/>CSE, IIT-Madras
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                Prof Surendra Prasad,
-                                <br/>IIT-Delhi
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>
-                                Prof Suman Mitra
-                                <br/>DA-IICT
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>
-                                Prof Anish Mathuria,
-                                <br/>DA-IICT
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>
-                                Dr. K. Kesavasmy,
-                                <br/>Representative, Tata Consultancy Services
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>
-                                Shri Pratul Shroff,
-                                <br/>CEO, E-Infochips
-                            </td>
-                            <td>Member</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>
-                                Shri C. P. Joglekar
-                                <br/>Registrar, IIIT-Vadodara
-                            </td>
-                            <td>Secretary</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <center>
+                    <img class="responsive-img" src="img/under-construction-green-yellow.gif" style="width: 45%">
+                </center>
             </div>
         </div>
         <!-- Footer -->
@@ -237,25 +150,25 @@
                     </div>
                     <div class="col-sm-4 links">
                         <div>
-                            <a href="index.html#news">News</a>
+                            <a href="index.php#news">News</a>
                             <i class="seperator"></i>
-                            <a href="index.html#announcements">Announcement</a>
+                            <a href="index.php#announcements">Announcement</a>
                             <i class="seperator"></i>
-                            <a href="index.html#events">Events</a>
+                            <a href="index.php#events">Events</a>
                         </div>
                         <div>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                             <i class="seperator"></i>
-                            <a href="rti.html">RTI</a>
+                            <a href="rti.php">RTI</a>
                             <i class="seperator"></i>
                             <a href="pdf/MOU.pdf">MOU</a>
                         </div>
                         <div>
-                            <a href="admissions.html">Admission</a>
+                            <a href="admissions.php">Admission</a>
                             <i class="seperator"></i>
-                            <a href="student_corner.html">Student</a>
+                            <a href="student_corner.php">Student</a>
                             <i class="seperator"></i>
-                            <a href="faculty.html">Faculty</a>
+                            <a href="faculty.php">Faculty</a>
                         </div>
                     </div>
                     <div class="col-sm-4 footer-social">
@@ -276,31 +189,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/434d359724.js"></script>
     <script>
-    $(document).on('click', function (e) {
-    var
-        $popover,
-        $target = $(e.target);
-
-    //do nothing if there was a click on popover content
-    if ($target.hasClass('popover') || $target.closest('.popover').length) {
-        return;
-    }
-
-    $('[data-toggle="popover"]').each(function () {
-        $popover = $(this);
-
-        if (!$popover.is(e.target) &&
-            $popover.has(e.target).length === 0 &&
-            $('.popover').has(e.target).length === 0)
-        {
-            $popover.popover('hide');
-        } else {
-            //fixes issue described above
-            $popover.popover('toggle');
-        }
+    $(document).ready(function() {
+        $('[data-toggle="popover"]').popover();
+        $('[data-toggle="popover"]').on('click', function (e) {
+            $('[data-toggle="popover"]').not(this).popover('hide');
+        });
     });
-})
-
     </script>
 </body>
 
