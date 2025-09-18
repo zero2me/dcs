@@ -86,6 +86,22 @@ $carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
                 <div class="events-content">
                     <div class="widgets-title"><h2>Events</h2></div>
                     <ul id="events-list">
+                          <li>
+                            <!-- Events -->
+                            <div class="event-container">
+                                <!-- Date -->
+                                <div class="date">
+                                        <span>
+                                            <!-- Day -->
+                                            <div class="day">19</div>
+                                            <!-- Month Short Form (first three letters) -->
+                                            <div class="month">Sep</div>
+                                        </span>
+                                </div>
+                                <!-- Event-Description -->
+                                <div class="event-text">Celebration of Teachers Day & Hindi Diwas</div>
+                            </div>
+                        </li>
                          <li>
                             <!-- Events -->
                             <div class="event-container">
