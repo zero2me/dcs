@@ -794,41 +794,169 @@ footer .address{
 	}
 }
 
-.principal-highlight {
-	background: #f9f9f9;        /* light background */
-	border-left: 6px solid #0073e6; /* highlight with a blue border */
-	padding: 20px;
-	margin: 20px 0;
-	border-radius: 6px;
-	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-  
-  .principal-highlight h1 {
-	color: #0073e6;
-	font-weight: bold;
-  }
-  
-  .principal-highlight .motto {
-	font-style: italic;
-	color: #444;
-	background: #fff8dc;
-	padding: 10px;
-	border-left: 4px solid #ff9900;
-	margin: 15px 0;
-  }
-  
-  .principal-highlight blockquote {
-	border-left: 4px solid #0073e6;
-	background: #eef6ff;
-	padding: 10px 15px;
-	font-style: italic;
-	margin: 15px 0;
-  }
-  
-  .signature {
-	text-align: right;
-	margin-top: 20px;
-	font-weight: bold;
-	color: #333;
-  }
-  
+.dir-msg {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center; /* vertically center items */
+            justify-content: center; /* horizontally center items */
+            margin-top: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Left card (principal details) */
+        .dir-detail {
+            flex: 1 1 250px;
+            max-width: 280px;
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .dir-detail img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #0073e6;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dir-detail img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 12px rgba(0, 115, 230, 0.4);
+        }
+
+        .dir-detail .dir-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0073e6;
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .dir-detail .principal-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0073e6;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .dir-detail .designation {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block; /* each designation on new line */
+        }
+
+        /* Right section (principal’s message) */
+        .principal-highlight {
+            flex: 3 1 600px;
+            background: #f9f9f9;
+            border-left: 6px solid #0073e6;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .principal-highlight:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 115, 230, 0.3);
+        }
+
+        .principal-highlight h1 {
+            color: #0073e6;
+            font-weight: bold;
+        }
+
+        .principal-highlight .motto {
+            font-style: italic;
+            color: #444;
+            background: #fff8dc;
+            padding: 10px;
+            border-left: 4px solid #ff9900;
+            margin: 15px 0;
+        }
+
+        .principal-highlight blockquote {
+            border-left: 4px solid #0073e6;
+            background: #eef6ff;
+            padding: 10px 15px;
+            font-style: italic;
+            margin: 15px 0;
+        }
+
+        /* Signature style inside message */
+        .signature {
+            text-align: right;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            font-weight: bold;
+            color: #0073e6;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .signature span.principal-name {
+            display: block;
+        }
+
+        .signature br {
+            display: block;
+            margin-bottom: 3px;
+        }
+.principal-highlight .desk-image-side {
+    float: left;
+    width: 150px; /* desired width */
+    height: 150px; /* desired height */
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.principal-highlight .desk-image {
+    width: 100%;        /* spans the full width of the message box */
+    height: auto;       /* maintains aspect ratio */
+    display: block;     /* remove inline gaps */
+    margin-bottom: 15px; /* spacing below image */
+    border-radius: 8px; /* optional rounded corners */
+    object-fit: cover;  /* crops if needed to fill width */
+}
+
+
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            .dir-msg {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dir-detail {
+                max-width: 100%;
+            }
+
+            .principal-highlight {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
