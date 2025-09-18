@@ -1,5 +1,5 @@
 <?php
-$carouselDir = "img/gallery";
+$carouselDir = "img/events";
 $carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
 ?>
 <!DOCTYPE html>
