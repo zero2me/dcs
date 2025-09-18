@@ -2,12 +2,21 @@
 $dir = "img/events"; // folder containing images
 $images = glob($dir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
 
-// Function to create a readable caption from filename
-function getCaption($filename) {
-    $base = basename($filename);          // get file name with extension
+// Function to create a readable caption and group key
+function getCaptionAndKey($filename) {
+    $base = basename($filename);
     $name = pathinfo($base, PATHINFO_FILENAME); // remove extension
-    $name = str_replace(['-', '_'], ' ', $name); // replace - and _ with space
-    return ucwords($name); // capitalize words
+    $nameForKey = preg_replace('/\d+/', '', $name); // remove numbers for grouping
+    $key = str_replace(['-', '_'], ' ', $nameForKey); // replace - and _ with space
+    $caption = str_replace(['-', '_'], ' ', $name); // caption keeps numbers for clarity
+    return ['caption' => ucwords($caption), 'key' => ucwords(trim($key))];
+}
+
+// Group images
+$groups = [];
+foreach ($images as $img) {
+    $info = getCaptionAndKey($img);
+    $groups[$info['key']][] = ['file' => $img, 'caption' => $info['caption']];
 }
 ?>
 
@@ -23,9 +32,19 @@ function getCaption($filename) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-    <style>
+   <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
         h1 { text-align: center; }
+
+        .group {
+            margin-bottom: 40px;
+        }
+
+        .group-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
 
         .gallery {
             display: flex;
@@ -114,12 +133,19 @@ function getCaption($filename) {
         <!-- Contents starts here -->
         <div class="content">
           <div class="gallery">
-    <?php foreach ($images as $index => $image): ?>
-        <div class="gallery-item">
-            <img src="<?php echo $image; ?>" alt="<?php echo getCaption($image); ?>" onclick="openLightbox(<?php echo $index; ?>)">
-            <div class="caption"><?php echo getCaption($image); ?></div>
+  <?php foreach($groups as $groupName => $items): ?>
+    <div class="group">
+        <div class="group-title"><?php echo $groupName; ?></div>
+        <div class="gallery">
+            <?php foreach($items as $index => $imgData): ?>
+                <div class="gallery-item">
+                    <img src="<?php echo $imgData['file']; ?>" alt="<?php echo $imgData['caption']; ?>" onclick="openLightbox('<?php echo $imgData['file']; ?>', '<?php echo $imgData['caption']; ?>')">
+                    <div class="caption"><?php echo $imgData['caption']; ?></div>
+                </div>
+            <?php endforeach; ?>
         </div>
-    <?php endforeach; ?>
+    </div>
+<?php endforeach; ?>
 </div>
 
 <!-- Lightbox -->
@@ -132,19 +158,14 @@ function getCaption($filename) {
 </div>
 
 <script>
-let images = <?php echo json_encode($images); ?>;
-
-// Generate captions from filenames
-let captions = images.map(function(img) {
-    let name = img.split('/').pop().split('.')[0];
-    name = name.replace(/[-_]/g, ' ');
-    return name.replace(/\b\w/g, l => l.toUpperCase());
-});
+let imageElements = Array.from(document.querySelectorAll('.gallery img'));
+let images = imageElements.map(img => img.src);
+let captions = imageElements.map(img => img.alt);
 
 let currentIndex = 0;
 
-function openLightbox(index) {
-    currentIndex = index;
+function openLightbox(src, caption) {
+    currentIndex = images.indexOf(src);
     document.getElementById('lightbox').style.display = 'flex';
     updateLightbox();
 }
