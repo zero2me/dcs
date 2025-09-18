@@ -5,7 +5,12 @@
         <div class="row">
             <!-- Address -->
             <div class="col-sm-4 address">
-                <strong>Address :</strong> c/o Principal, Degree College Shikaripara (Sarsajol, Dumka) Jharkhand - 382028
+                <strong>Address :</strong> Degree College, Shikaripara. Sarsajol
+Post - Sarsajol 
+Panchayat - Bankijor 
+PS - Shikaripara. 
+District - Dumka 
+Pin - 816118
             </div>
 
             <!-- Quick Links -->
