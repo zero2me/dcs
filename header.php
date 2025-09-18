@@ -86,40 +86,151 @@
                         </li>
                         <li><a href="career.php">Career</a></li>
                         <li><a href="gallery.php">Photo Gallery</a></li>
+                        <li><!-- 🌐 Custom Language Dropdown -->
+<div class="dropdown translate-dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        🌐 Language <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#" onclick="translateLanguage('hi'); return false;">हिन्दी (Hindi)</a></li>
+        <li><a href="#" onclick="translateLanguage('sat'); return false;">ᱥᱟᱱᱛᱟᱲᱤ (Santali)</a></li>
+        <li><a href="#" onclick="translateLanguage('bho'); return false;">भोजपुरी (Bhojpuri)</a></li>
+        <li><a href="#" onclick="translateLanguage('mai'); return false;">मैथिली (Maithili)</a></li>
+        <li><a href="#" onclick="translateLanguage('ur'); return false;">اردو (Urdu)</a></li>
+        <li class="divider"></li>
+        <li><a href="#" onclick="translateLanguage('en'); return false;">English</a></li>
+    </ul>
+</div>
+</li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Hidden Google Translate element -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+  const langNames = {
+    "en": "English",
+    "hi": "हिन्दी",
+    "sat": "ᱥᱟᱱᱛᱟᱲᱤ",
+    "bho": "भोजपुरी",
+    "mai": "मैथिली",
+    "ur": "اردو"
+  };
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,hi,sat,bho,mai,ur',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+
+  // Function to trigger translation and remember choice
+  function translateLanguage(lang) {
+    var frame = document.querySelector('iframe.goog-te-menu-frame');
+    if (!frame) {
+      console.warn("Translation frame not ready yet.");
+      return;
+    }
+    var innerDoc = frame.contentDocument || frame.contentWindow.document;
+    var select = innerDoc.querySelector('select.goog-te-combo');
+    if (select) {
+      select.value = lang;
+      select.dispatchEvent(new Event('change'));
+      localStorage.setItem("selectedLang", lang); // save choice
+      updateDropdownLabel(lang);
+    }
+  }
+
+  // Update dropdown label
+  function updateDropdownLabel(lang) {
+    const label = document.getElementById("langDropdown");
+    if (label) {
+      label.innerHTML = "🌐 " + (langNames[lang] || "Language") + ' <b class="caret"></b>';
+    }
+  }
+
+  // Auto-apply saved language on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    var savedLang = localStorage.getItem("selectedLang") || "en";
+    updateDropdownLabel(savedLang);
+
+    if (savedLang && savedLang !== "en") {
+      setTimeout(function () {
+        translateLanguage(savedLang);
+      }, 1500);
+    }
+  });
+</script>
+
+<script type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
 </header>
 
 <!-- ✅ Google Translate Script -->
-<style>
-    .goog-te-banner-frame.skiptranslate {
+ 
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+  <!-- ✅ Google Translate CSS Fix -->
+    <style>
+        /* Hide Google Translate top banner */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
+
+        /* Hide tooltip highlight */
+        .goog-tooltip, .goog-tooltip:hover {
+            display: none !important;
+        }
+        .goog-text-highlight {
+            background: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Style dropdown */
+        #google_translate_element {
+            float: right;
+            margin: 10px 20px 0 0;
+            font-size: 14px;
+        }
+        .goog-te-gadget {
+            font-family: inherit !important;
+            font-size: 14px !important;
+            color: #444 !important;
+        }
+        .goog-te-gadget select {
+            padding: 4px 6px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        /* Hide Google Translate top bar */
+.goog-te-banner-frame.skiptranslate {
     display: none !important;
 } 
-
 body {
     top: 0px !important;
 }
+
+/* Hide Google Translate tooltip */
 .goog-tooltip, .goog-tooltip:hover {
     display: none !important;
 }
+
+/* Hide Google Translate frame and branding */
 .goog-text-highlight {
     background: none !important;
     box-shadow: none !important;
 }
-    .goog-te-banner-frame.skiptranslate { display: none !important; }
-    body { top: 0px !important; }
-    .goog-tooltip, .goog-tooltip:hover { display: none !important; }
-    .goog-text-highlight { background: none !important; box-shadow: none !important; }
-    #google_translate_element select {
-        padding: 4px 6px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 13px;
-    }
-</style>
+    </style>
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
