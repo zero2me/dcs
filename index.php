@@ -213,8 +213,7 @@ $carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
                     <div class="widgets-title"><h2>News</h2></div>
                     <ul id="news-list">
                         <li>
-                            <a href="http://aviaryan.in" target="_blank">Mr. Avi Aryan</a> got selected in Google Summer
-                            of Code 2023.
+                            <a href=# target="_blank">Shri Nalin Soren</a> Cordial Visit by Shri Nalin Soren, Member of Lok Shabha, Dumka.
 
                         </li>
                     </ul>
