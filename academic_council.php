@@ -105,7 +105,7 @@
                             <td>9</td>
                             <td>
                                 Shri C. P. Joglekar
-                                <br/>Registrar, IIIT-Vadodara
+                                <br/>Registrar, Degree College Shikariparaadodara
                             </td>
                             <td>Secretary</td>
                         </tr>

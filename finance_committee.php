@@ -50,7 +50,7 @@
                     <tr>
                         <td>4</td>
                         <td>Shri C. P. Joglekar</td>
-                        <td>Registrar, IIIT-Vadodara</td>
+                        <td>Registrar, Degree College Shikariparaadodara</td>
                     </tr>
                     <tr>
                         <td>5</td>

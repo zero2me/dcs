@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT-V | Student's Corner</title>
+    <title>Degree College Shikaripara | Student's Corner</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>

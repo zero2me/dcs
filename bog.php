@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT-V | Board of Governors</title>
+    <title>Degree College Shikaripara | Board of Governors</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -90,7 +90,7 @@
                     <td>7</td>
                     <td>Director of the Institute, who shall be the Member-Secretary of the Board, <b>ex-officio;</b>
                     </td>
-                    <td>Mentor Director, IIIT-Vadodara till the appointment of regular Director</td>
+                    <td>Mentor Director, Degree College Shikariparaadodara till the appointment of regular Director</td>
                 </tr>
             </table>
         </div>

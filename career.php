@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>IIIT-V | Careers</title>
+    <title>Degree College Shikaripara | Careers</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
@@ -25,7 +25,7 @@
                 <br>
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <h4>Faculty</h4> Presently the Degree College Shikaripara, Vadodara is being mentored by <a href="http://daiict.ac.in" target="_blank">DAIICT</a>, Gandhinagar. Being the academic mentor, faculty recruitment for IIIT-V is also managed by DAIICT. The institute invites applications from motivated candidates with research expertise in all areas of
+                        <h4>Faculty</h4> Presently the Degree College Shikaripara, Vadodara is being mentored by <a href="http://daiict.ac.in" target="_blank">DAIICT</a>, Gandhinagar. Being the academic mentor, faculty recruitment for Degree College Shikaripara is also managed by DAIICT. The institute invites applications from motivated candidates with research expertise in all areas of
                         <b>Computer Science and Information Technology</b>. Suitable candidates must have a doctorate in a relevant discipline. We have openings at the levels of Assistant Professor, Associate Professor, and Professor. Visiting faculty positions are also available for short or long term visits. To apply, please submit <b>a curriculum vitae, a publication list, a one-page summary of research
                     plans, a statement of teaching interests, and the names of three references</b> (with contact information) electronically to <a href="mailto:facultysearch@degreecollegeshikaripara.ac.in">facultysearch@degreecollegeshikaripara.ac.in.</a>
                     </li>
