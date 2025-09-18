@@ -14,9 +14,14 @@
     </style>
 </head>
 <body>
-
+     <!-- Start Your Body Code From here -->
+    <div class="wrapper">
+        <!-- header starts here -->
+        <?php include 'header.php'; ?>  
+        <!-- /header -->
+        <!-- Content wrapper -->
 <div class="content-wrapper">
-    <?php include 'header.php'; ?>
+    
 
     <h1>College Committees</h1>
 
@@ -32,7 +37,7 @@
     </ul>
 
     <p>Content will be updated soon. Stay tuned for detailed information about each committee, its members, and responsibilities.</p>
-
+</div>
     <?php include 'footer.php'; ?>
 </div>
 
