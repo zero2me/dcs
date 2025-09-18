@@ -14,9 +14,14 @@
     </style>
 </head>
 <body>
+       <!-- Start Your Body Code From here -->
+    <div class="wrapper">
+        <!-- header starts here -->
+        <?php include 'header.php'; ?>  
+        <!-- /header -->
+        <!-- Content wrapper -->
 
-<div class="content-wrapper">
-    <?php include 'header.php'; ?>
+        <div class="content-wrapper">
 
     <h1>Internal Quality Assurance Cell (IQAC)</h1>
 
@@ -31,11 +36,37 @@
     </ul>
 
     <p>Content will be updated soon. Stay tuned for detailed information about the IQAC activities and reports.</p>
-
-    <?php include 'footer.php'; ?>
 </div>
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <!-- Footer -->
+        <?php include 'footer.php'; ?>  
+    </div>
+    <!--Scripts Starts-->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script>
+    $(document).on('click', function (e) {
+    var
+        $popover,
+        $target = $(e.target);
+    //do nothing if there was a click on popover content
+    if ($target.hasClass('popover') || $target.closest('.popover').length) {
+        return;
+    }
+    $('[data-toggle="popover"]').each(function () {
+        $popover = $(this);
+        if (!$popover.is(e.target) &&
+            $popover.has(e.target).length === 0 &&
+            $('.popover').has(e.target).length === 0)
+        {
+            $popover.popover('hide');
+        } else {
+            //fixes issue described above
+            $popover.popover('toggle');
+        }
+    });
+})
+    </script>
 </body>
+
 </html>
