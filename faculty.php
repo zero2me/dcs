@@ -9,97 +9,135 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
- /* Faculty Section */
-.faculty-section {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Principal Highlight */
-.faculty-head {
-  text-align: center;
-  background: #fff;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
-}
+    .faculty-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-.faculty-head img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #0073e6; /* Highlight Principal */
-  margin-bottom: 15px;
-}
+    h1 {
+      text-align: center;
+      color: #333;
+    }
 
-.faculty-head strong {
-  font-size: 20px;
-  color: #222;
-}
+    .faculty-head {
+      text-align: center;
+      margin: 20px 0;
+    }
 
-/* Faculty Grid */
-.faculty-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
+    .faculty-head img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-.faculty-card {
-  background: #fff;
-  text-align: center;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .faculty-head p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
 
-.faculty-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
+    /* Buttons */
+    .accordion, .toggle-all {
+      background: #004080;
+      color: #fff;
+      cursor: pointer;
+      padding: 12px 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      margin-top: 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
 
-.faculty-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 3px solid #eee;
-}
+    .accordion:hover, .toggle-all:hover {
+      background: #0059b3;
+    }
 
-.faculty-card p {
-  margin: 0;
-  font-size: 15px;
-  color: #333;
-  line-height: 1.4;
-}
+    .accordion:after {
+      content: '\25BC';
+      float: right;
+    }
 
-.faculty-card strong {
-  display: block;
-  font-size: 17px;
-  color: #111;
-  margin-bottom: 5px;
-}
+    .accordion.active:after {
+      content: '\25B2';
+    }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .faculty-head img {
-    width: 120px;
-    height: 120px;
-  }
+    .panel {
+      display: none;
+      padding: 15px;
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+    }
 
-  .faculty-card img {
-    width: 100px;
-    height: 100px;
-  }
-}
+    .faculty-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 10px;
+    }
 
+    .faculty-card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-        </style>
+    .faculty-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .faculty-card p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Sub faculty (under HOD) */
+    .sub-faculty {
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .faculty-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .faculty-card img {
+        margin: 0 0 10px 0;
+      }
+      .sub-faculty {
+        margin-left: 0;
+      }
+    }
+  </style>
 
 </head>
 
@@ -110,60 +148,126 @@
        <?php include 'header.php'; ?>  
         <!-- header -->
         <!-- Content wrapper -->
-<div class="contents-wrapper">
-  <div class="content faculty-section">
 
-    <section id="faculty-gallery" class="faculty-highlight">
-      <h1>Faculty Gallery</h1>
-      <p>
-        The faculty members of <strong>Degree College, Shikaripara</strong> are dedicated to guiding students 
-        with academic excellence, mentorship, and values. Our team represents diverse disciplines, combining 
-        knowledge and experience to nurture holistic development in students.
-      </p>
 
-      <!-- Principal at Top -->
-      <div class="faculty-head">
-        <img src="img/gallery/faculty/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
-        <p>
-          <strong>Prof. Subodh Rajak</strong><br>
-          Principal & Head of Arts Department
-        </p>
-      </div>
+<div class="faculty-section">
+  <h1>Faculty Gallery</h1>
 
-      <!-- Other Faculty in Grid -->
-      <div class="faculty-gallery">
+  <!-- Expand/Collapse All -->
+  <button class="toggle-all">Expand All</button>
 
-        <div class="faculty-card">
-          <img src="img/gallery/faculty/varun.jpeg" alt="Prof. Varun" />
-          <p><strong>Prof. Varun</strong><br>Assistant Professor</p>
-        </div>
-
-        <div class="faculty-card">
-          <img src="img/gallery/faculty/sidhor.jpeg" alt="Prof. Sidhor" />
-          <p><strong>Prof. Sidhor</strong><br>Science Faculty</p>
-        </div>
-
-        <div class="faculty-card">
-          <img src="img/gallery/faculty/babita.jpeg" alt="Prof. Babita" />
-          <p><strong>Prof. Babita</strong><br>Commerce Faculty</p>
-        </div>
-
-        <div class="faculty-card">
-          <img src="img/gallery/faculty/gopal.jpeg" alt="Prof. Gopal" />
-          <p><strong>Prof. Gopal</strong><br>Assistant Professor</p>
-        </div>
-
-        <div class="faculty-card">
-          <img src="img/gallery/faculty/ashok.jpeg" alt="Prof. Ashok" />
-          <p><strong>Prof. Ashok</strong><br>Assistant Professor</p>
-        </div>
-
-      </div>
-    </section>
+  <!-- Principal -->
+  <div class="faculty-head">
+    <img src="img/gallery/faculty/subodh.jpg" alt="Dr. Subodh Prasad Rajak">
+    <p><strong>Dr. Subodh Prasad Rajak</strong><br>Professor In-Charge & H.O.D, Dept. of Political Science</p>
   </div>
-</div>
+
+  <!-- Arts Department -->
+  <button class="accordion">Arts Faculty</button>
+  <div class="panel">
+    <div class="faculty-gallery">
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/sidhor.jpg" alt="Mr. Sidhor Hansdak">
+        <p><strong>Mr. Sidhor Hansdak</strong><br>H.O.D, Dept. of Santhali</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/varun.jpg" alt="Mr. Varun Kumar">
+        <p><strong>Mr. Varun Kumar</strong><br>H.O.D, Dept. of Sociology</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/ashok.jpg" alt="Dr. Ashok Kumar Bharti">
+        <p><strong>Dr. Ashok Kumar Bharti</strong><br>H.O.D, Dept. of Psychology</p>
+      </div>
+      <div class="sub-faculty">
+        <div class="faculty-card">
+          <img src="img/gallery/faculty/nazim.jpg" alt="Dr. Nazim Imam">
+          <p><strong>Dr. Nazim Imam</strong><br>Dept. of Psychology</p>
+        </div>
+      </div>
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/babita.jpg" alt="Mrs. Babita Kisku">
+        <p><strong>Mrs. Babita Kisku</strong><br>H.O.D, Dept. of Geography</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/bablu.jpg" alt="Mr. Bablu Murmu">
+        <p><strong>Mr. Bablu Murmu</strong><br>H.O.D, Dept. of Economics</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/ainul.jpg" alt="Dr. Ainul Bari">
+        <p><strong>Dr. Ainul Bari</strong><br>H.O.D, Dept. of English</p>
+      </div>
+
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/gopal.jpg" alt="Dr. Gopal Kumar Sahu">
+        <p><strong>Dr. Gopal Kumar Sahu</strong><br>H.O.D, Dept. of History</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Science Department -->
+  <button class="accordion">Science Faculty</button>
+  <div class="panel">
+    <div class="faculty-gallery">
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/kishor.jpg" alt="Dr. Kishor Chandra Kharkwal">
+        <p><strong>Dr. Kishor Chandra Kharkwal</strong><br>H.O.D, Dept. of Physics</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Commerce Department -->
+  <button class="accordion">Commerce Faculty</button>
+  <div class="panel">
+    <div class="faculty-gallery">
+      <div class="faculty-card">
+        <img src="img/gallery/faculty/mukesh.jpg" alt="Dr. Mukesh Kumar">
+        <p><strong>Dr. Mukesh Kumar</strong><br>H.O.D, Dept. of Commerce</p>
+      </div>
+      <div class="sub-faculty">
+        <div class="faculty-card">
+          <img src="img/gallery/faculty/rima.jpg" alt="Mrs. Rima Gladis Soren">
+          <p><strong>Mrs. Rima Gladis Soren</strong><br>Dept. of Commerce</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  const toggleAllBtn = document.querySelector(".toggle-all");
+
+  acc.forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      panel.style.display = panel.style.display === "block" ? "none" : "block";
+    });
+  });
+
+  toggleAllBtn.addEventListener("click", () => {
+    const expand = toggleAllBtn.textContent === "Expand All";
+    acc.forEach(btn => {
+      const panel = btn.nextElementSibling;
+      if (expand) {
+        btn.classList.add("active");
+        panel.style.display = "block";
+      } else {
+        btn.classList.remove("active");
+        panel.style.display = "none";
+      }
+    });
+    toggleAllBtn.textContent = expand ? "Collapse All" : "Expand All";
+  });
+</script>
 
 
         <!-- Footer -->
