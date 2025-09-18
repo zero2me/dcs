@@ -95,6 +95,20 @@
 
 <!-- ✅ Google Translate Script -->
 <style>
+    .goog-te-banner-frame.skiptranslate {
+    display: none !important;
+} 
+
+body {
+    top: 0px !important;
+}
+.goog-tooltip, .goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background: none !important;
+    box-shadow: none !important;
+}
     .goog-te-banner-frame.skiptranslate { display: none !important; }
     body { top: 0px !important; }
     .goog-tooltip, .goog-tooltip:hover { display: none !important; }
