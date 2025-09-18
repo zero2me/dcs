@@ -793,3 +793,42 @@ footer .address{
 		width: 25%;
 	}
 }
+
+.principal-highlight {
+	background: #f9f9ff;        /* light background */
+	border: 2px solid #1f6feb;  /* blue border highlight */
+	border-radius: 12px;
+	padding: 24px;
+	margin: 40px auto;
+	max-width: 900px;
+	box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  }
+  
+  .principal-highlight h1 {
+	color: #1f6feb;
+	font-size: 1.8rem;
+	margin-bottom: 16px;
+	text-align: center;
+  }
+  
+  .principal-highlight .motto {
+	font-style: italic;
+	color: #c0392b;
+	font-weight: 600;
+	margin: 16px 0;
+  }
+  
+  .principal-highlight blockquote {
+	margin: 20px 0;
+	padding: 12px 16px;
+	background: #eef5ff;
+	border-left: 4px solid #1f6feb;
+	border-radius: 6px;
+  }
+  
+  .principal-highlight .signature {
+	margin-top: 20px;
+	font-weight: 600;
+	text-align: right;
+  }
+  
