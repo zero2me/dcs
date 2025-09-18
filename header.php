@@ -26,6 +26,7 @@
                 <a href="#" data-toggle="popover" title="Email"
                    data-content="helpdesk@degreecollegeshikaripara.ac.in"
                    data-placement="bottom"><i class="fa fa-envelope fa-lg"></i></a>
+                   <a href="index.php">Home</a></li>
             </div>
         </div>
     </div>
@@ -44,7 +45,6 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a href="principals_message.php">Principal</a></li>
                         <li>
