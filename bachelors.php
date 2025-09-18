@@ -98,8 +98,8 @@
     <div class="content academics-section">
 
         <section id="academics" class="academics-highlight">
-            <h1>Academics</h1>
-            <img src="img/academics.jpg" alt="Academics" class="desk-image">
+            <h1 align='center'>Academics</h1>
+            <!-- <img src="img/academics.jpg" alt="Academics" class="desk-image"> -->
 
             <p>
                 <strong>Degree College, Shikaripara</strong> offers undergraduate programs under 
