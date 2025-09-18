@@ -318,22 +318,32 @@ suman3961@gmail.com
 }
 </style>
 
-<div class="ribbon-overlay" id="ribbonOverlay">
+<div class="ribbon-overlay" id="ribbonOverlay" style="display:none;">
   <div class="ribbon" id="ribbon">🎉 Website Inauguration 🎉</div>
   <button class="cut-btn" onclick="cutRibbon()">✂️ Cut the Ribbon</button>
 </div>
 
 <script>
-function cutRibbon() {
-  const ribbon = document.getElementById("ribbon");
-  ribbon.classList.add("cut");
+(function(){
+  const ribbonOverlay = document.getElementById("ribbonOverlay");
 
-  setTimeout(() => {
-    const overlay = document.getElementById("ribbonOverlay");
-    overlay.style.opacity = 0;
-    setTimeout(()=> overlay.remove(), 1000);
-  }, 1200);
-}
+  // Only show if not already cut before
+  if(!localStorage.getItem("ribbonCutDone")){
+    ribbonOverlay.style.display = "flex";
+  }
+
+  window.cutRibbon = function() {
+    const ribbon = document.getElementById("ribbon");
+    ribbon.classList.add("cut");
+
+    setTimeout(() => {
+      ribbonOverlay.style.opacity = 0;
+      setTimeout(()=> ribbonOverlay.remove(), 1000);
+      // Mark as cut so it won’t show again
+      localStorage.setItem("ribbonCutDone","yes");
+    }, 1200);
+  };
+})();
 </script>
 
 </body>
