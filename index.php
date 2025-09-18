@@ -261,226 +261,79 @@ suman3961@gmail.com
 -->
 
 
-<!-- Paste this near the end of <body> -->
+<!-- Ribbon Reveal Overlay -->
 <style>
-/* ---------- Ribbon base ---------- */
-.dynamic-ribbon {
+.ribbon-overlay {
   position: fixed;
-  left: 0; right: 0;
-  z-index: 9999;
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap: 12px;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  padding: 10px 16px;
-  box-sizing: border-box;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  flex-direction: column;
+  transition: opacity 1s ease;
+}
+
+.ribbon {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+  background: linear-gradient(90deg, #d32f2f, #f44336);
+  border: 3px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
-  background: linear-gradient(90deg,#0b63d9,#0b8fd9);
-  box-shadow: 0 6px 18px rgba(8,20,40,0.12);
-  transform: translateY(-120%);
-  transition: transform .45s cubic-bezier(.2,.9,.2,1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.dynamic-ribbon.show { transform: translateY(0); }
-
-/* left text area */
-.dynamic-ribbon .r-left { display:flex; gap:12px; align-items:center; flex:1; min-width:0; }
-.dynamic-ribbon .r-left .title { font-weight:600; white-space:nowrap; }
-.dynamic-ribbon .r-left .subtitle { opacity:.95; font-size:0.95rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-
-/* button/link */
-.dynamic-ribbon .r-actions { display:flex; gap:8px; align-items:center; flex-shrink:0; }
-.dynamic-ribbon .r-actions a.btn {
-  background: rgba(255,255,255,0.12);
-  color: #fff; padding: 8px 12px; border-radius:8px; text-decoration:none; font-weight:600;
-  backdrop-filter: blur(4px);
-}
-.dynamic-ribbon .r-actions button.close {
-  background: transparent; border: none; color: #fff; cursor:pointer; font-size:18px;
-  padding:6px; line-height:1;
-}
-
-/* corner ribbon style (diagonal) */
-.ribbon-corner {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 9999;
-  transform: rotate(45deg);
-  transform-origin: center;
-  background: linear-gradient(90deg,#e65100,#ff8a00);
+.cut-btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #000;
   color: #fff;
-  padding: 8px 54px;
-  font-weight:700;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s;
+}
+.cut-btn:hover {
+  background: #333;
 }
 
-/* Responsive adjustments */
-@media (max-width:720px){
-  .dynamic-ribbon { padding: 10px; font-size: 14px; gap:8px; }
-  .dynamic-ribbon .r-actions a.btn { padding: 7px 10px; border-radius:6px; font-size: 14px; }
+.ribbon.cut {
+  animation: cutRibbon 1.2s forwards;
 }
 
-/* countdown number */
-.r-countdown { font-weight:700; margin-left:6px; font-variant-numeric: tabular-nums; }
+@keyframes cutRibbon {
+  0% { transform: scaleX(1) rotate(0deg); }
+  50% { transform: scaleX(0.2) rotate(5deg); }
+  100% { transform: scaleX(0) rotate(-10deg); opacity: 0; }
+}
 </style>
 
+<div class="ribbon-overlay" id="ribbonOverlay">
+  <div class="ribbon" id="ribbon">🎉 Website Inauguration 🎉</div>
+  <button class="cut-btn" onclick="cutRibbon()">✂️ Cut the Ribbon</button>
+</div>
+
 <script>
-(function(){
-  /* ----------------- CONFIG -----------------
-     edit these values to customize behaviour
-  */
-  const config = {
-    type: "top",            // "top" or "corner"
-    id: "inaug-ribbon-1",   // unique id for localStorage dismiss
-    showForDaysAfterDismiss: 7, // days to hide after user closes
-    title: "College Website Launched!",
-    subtitle: "Inauguration on Sep 20, 2025 — Click to know more.",
-    link: { url: "#", text: "Event Details", target: "_self" }, // set to null to hide
-    countdownTo: "2025-09-20T10:00:00+05:30", // ISO string or null
-    autoShow: true,         // show automatically
-    animate: true,
-    background: null,       // CSS background override, e.g. 'linear-gradient(90deg,#6a1b9a,#8e24aa)'
-  };
+function cutRibbon() {
+  const ribbon = document.getElementById("ribbon");
+  ribbon.classList.add("cut");
 
-  /* ----------------- Helper ----------------- */
-  function daysSince(ts){ return (Date.now()-ts)/(1000*60*60*24); }
-  const dismissedUntilKey = (id) => `ribbon_dismiss_${id}`;
-
-  /* skip rendering if dismissed recently */
-  const stored = localStorage.getItem(dismissedUntilKey(config.id));
-  if(stored){
-    try{
-      const until = +stored;
-      if(Date.now() < until) return;
-    }catch(e){}
-  }
-
-  /* create top ribbon */
-  function createTopRibbon(){
-    const el = document.createElement("div");
-    el.className = "dynamic-ribbon";
-    el.setAttribute("role","region");
-    el.setAttribute("aria-live","polite");
-    el.setAttribute("aria-label","Announcement ribbon");
-
-    if(config.background) el.style.background = config.background;
-
-    const left = document.createElement("div"); left.className = "r-left";
-    const t = document.createElement("div"); t.className = "title"; t.textContent = config.title;
-    const s = document.createElement("div"); s.className = "subtitle"; s.textContent = config.subtitle;
-    left.appendChild(t); left.appendChild(s);
-
-    const actions = document.createElement("div"); actions.className = "r-actions";
-
-    if(config.countdownTo){
-      const countdownSpan = document.createElement("span");
-      countdownSpan.className = "r-countdown";
-      updateCountdown(countdownSpan, config.countdownTo);
-      actions.appendChild(countdownSpan);
-      // continuous update:
-      setInterval(()=> updateCountdown(countdownSpan, config.countdownTo), 1000);
-    }
-
-    if(config.link){
-      const a = document.createElement("a");
-      a.className = "btn";
-      a.href = config.link.url;
-      a.textContent = config.link.text || "Learn more";
-      if(config.link.target) a.target = config.link.target;
-      actions.appendChild(a);
-    }
-
-    const closeBtn = document.createElement("button");
-    closeBtn.className = "close";
-    closeBtn.setAttribute("aria-label","Close announcement");
-    closeBtn.innerHTML = "&times;";
-    closeBtn.onclick = () => dismiss(el);
-    actions.appendChild(closeBtn);
-
-    el.appendChild(left); el.appendChild(actions);
-    return el;
-  }
-
-  /* create corner ribbon */
-  function createCornerRibbon(){
-    const el = document.createElement("div");
-    el.className = "ribbon-corner";
-    el.setAttribute("role","button");
-    el.setAttribute("aria-pressed","false");
-    el.textContent = config.title;
-    el.onclick = () => {
-      if(config.link && config.link.url) window.open(config.link.url, config.link.target || "_self");
-    };
-    return el;
-  }
-
-  /* countdown helper: shows "D days HH:MM:SS" or "Now" if passed */
-  function updateCountdown(node, iso){
-    try{
-      const t = new Date(iso).getTime();
-      const diff = Math.max(0, t - Date.now());
-      if(diff === 0){
-        node.textContent = "Now";
-        return;
-      }
-      const s = Math.floor(diff/1000);
-      const days = Math.floor(s / 86400);
-      const hours = Math.floor((s % 86400)/3600);
-      const mins = Math.floor((s%3600)/60);
-      const secs = s % 60;
-      node.textContent = days > 0
-        ? `${days}d ${String(hours).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`
-        : `${String(hours).padStart(2,'0')}:${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
-    }catch(e){
-      node.textContent = "";
-    }
-  }
-
-  function dismiss(el){
-    const days = Math.max(1, config.showForDaysAfterDismiss||1);
-    const until = Date.now() + days*24*60*60*1000;
-    localStorage.setItem(dismissedUntilKey(config.id), String(until));
-    el.classList.remove("show");
-    setTimeout(()=> el.remove(), 500);
-  }
-
-  /* mount */
-  function mount(){
-    let wrapper;
-    if(config.type === "corner"){
-      wrapper = createCornerRibbon();
-      document.body.appendChild(wrapper);
-      // small entrance animation
-      wrapper.style.opacity = 0;
-      wrapper.style.transition = "opacity .45s ease, transform .45s ease";
-      requestAnimationFrame(()=> { wrapper.style.opacity = 1; wrapper.style.transform = "rotate(45deg) scale(1)"; });
-    } else {
-      wrapper = createTopRibbon();
-      document.body.appendChild(wrapper);
-      // slight delay before showing for nicer effect
-      requestAnimationFrame(()=> {
-        if(config.animate) setTimeout(()=> wrapper.classList.add("show"), 80);
-        else wrapper.classList.add("show");
-      });
-    }
-  }
-
-  /* init on DOM ready */
-  if(config.autoShow){
-    if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount);
-    else mount();
-  }
-
-  /* Expose a global function to control ribbon from console or other scripts */
-  window.DynamicRibbon = {
-    show: mount,
-    dismissForDays: (d) => localStorage.setItem(dismissedUntilKey(config.id), String(Date.now() + (d||config.showForDaysAfterDismiss)*24*3600*1000))
-  };
-
-})();
+  setTimeout(() => {
+    const overlay = document.getElementById("ribbonOverlay");
+    overlay.style.opacity = 0;
+    setTimeout(()=> overlay.remove(), 1000);
+  }, 1200);
+}
 </script>
 
 </body>
