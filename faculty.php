@@ -10,18 +10,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
-        /* Faculty Section */
+ /* Faculty Section */
 .faculty-section {
   max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
 
+/* Principal Highlight */
+.faculty-head {
+  text-align: center;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.faculty-head img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0073e6; /* Highlight Principal */
+  margin-bottom: 15px;
+}
+
+.faculty-head strong {
+  font-size: 20px;
+  color: #222;
+}
+
+/* Faculty Grid */
 .faculty-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  margin-top: 30px;
 }
 
 .faculty-card {
@@ -49,25 +73,31 @@
 
 .faculty-card p {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   color: #333;
   line-height: 1.4;
 }
 
 .faculty-card strong {
   display: block;
-  font-size: 18px;
-  color: #222;
+  font-size: 17px;
+  color: #111;
   margin-bottom: 5px;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 600px) {
+  .faculty-head img {
+    width: 120px;
+    height: 120px;
+  }
+
   .faculty-card img {
     width: 100px;
     height: 100px;
   }
 }
+
 
         </style>
 
@@ -80,52 +110,59 @@
        <?php include 'header.php'; ?>  
         <!-- header -->
         <!-- Content wrapper -->
-        <div class="contents-wrapper">
+<div class="contents-wrapper">
   <div class="content faculty-section">
 
     <section id="faculty-gallery" class="faculty-highlight">
-      <h1 align='center'>Faculty Gallery</h1>
+      <h1>Faculty Gallery</h1>
       <p>
         The faculty members of <strong>Degree College, Shikaripara</strong> are dedicated to guiding students 
         with academic excellence, mentorship, and values. Our team represents diverse disciplines, combining 
         knowledge and experience to nurture holistic development in students.
       </p>
 
+      <!-- Principal at Top -->
+      <div class="faculty-head">
+        <img src="images/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
+        <p>
+          <strong>Prof. Subodh Rajak</strong><br>
+          Principal & Head of Arts Department
+        </p>
+      </div>
+
+      <!-- Other Faculty in Grid -->
       <div class="faculty-gallery">
 
         <div class="faculty-card">
-          <img src="img/gallery/faculty/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
-          <p><strong>Prof. Subodh Rajak</strong><br>Principal & Head of Arts Department</p>
-        </div>
-
-        <div class="faculty-card">
-          <img src="img/gallery/faculty/varun.jpeg" alt="Prof. Varun" class="responsive-img circle" />
+          <img src="images/varun.jpeg" alt="Prof. Varun" />
           <p><strong>Prof. Varun</strong><br>Assistant Professor</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/gallery/faculty/sidhor.jpeg" alt="Prof. Sidhor" class="responsive-img circle" />
+          <img src="images/sidhor.jpeg" alt="Prof. Sidhor" />
           <p><strong>Prof. Sidhor</strong><br>Science Faculty</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/gallery/faculty/babita.jpeg" alt="Prof. Babita" class="responsive-img circle" />
+          <img src="images/babita.jpeg" alt="Prof. Babita" />
           <p><strong>Prof. Babita</strong><br>Commerce Faculty</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/gallery/faculty/gopal.jpeg" alt="Prof. Gopal" class="responsive-img circle" />
+          <img src="images/gopal.jpeg" alt="Prof. Gopal" />
           <p><strong>Prof. Gopal</strong><br>Assistant Professor</p>
         </div>
 
         <div class="faculty-card">
-          <img src="img/gallery/faculty/ashok.jpeg" alt="Prof. Ashok" class="responsive-img circle" />
+          <img src="images/ashok.jpeg" alt="Prof. Ashok" />
           <p><strong>Prof. Ashok</strong><br>Assistant Professor</p>
         </div>
 
       </div>
     </section>
   </div>
+</div>
+
 </div>
 
 
