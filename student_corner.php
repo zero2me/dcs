@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Students Corner - Degree College Shikaripara</title>
-  <link rel="stylesheet" href="css/style.css"> <!-- Your main CSS file -->
-  <style>
+    <meta charset="UTF-8">
+    <title>Degree College Shikaripara | Student's Corner</title>
+    <!--Style Starts-->
+    <link rel="icon" type="image/png" href="img/college_logo.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+     <style>
     /* Inline styling specific to Students Corner */
     .students-section {
       max-width: 900px;
@@ -63,13 +68,18 @@
     }
   </style>
 </head>
+
 <body>
-
-  <!-- Header -->
-  <?php include 'header.php'; ?>
-
-  <!-- Students Corner Content -->
-  <div class="students-section">
+    <!-- Start Your Body Code From here -->
+    <div class="wrapper">
+        <!-- header starts here -->
+        <?php include 'header.php'; ?>  
+        <!-- /header -->
+        <!-- Content wrapper -->
+        <div class="contents-wrapper">
+            <!-- Contents starts here -->
+            <div class="content">
+                 <div class="students-section">
     <h1>Students Corner</h1>
 
     <ul class="students-list">
@@ -107,9 +117,38 @@
       </li>
     </ul>
   </div>
-
-  <!-- Footer -->
-  <?php include 'footer.php'; ?>
-
+            </div>
+        </div>
+        <!-- Footer -->
+        <?php include 'footer.php'; ?>  
+    </div>
+    <!--Scripts Starts-->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script>
+    $(document).on('click', function (e) {
+    var
+        $popover,
+        $target = $(e.target);
+    //do nothing if there was a click on popover content
+    if ($target.hasClass('popover') || $target.closest('.popover').length) {
+        return;
+    }
+    $('[data-toggle="popover"]').each(function () {
+        $popover = $(this);
+        if (!$popover.is(e.target) &&
+            $popover.has(e.target).length === 0 &&
+            $('.popover').has(e.target).length === 0)
+        {
+            $popover.popover('hide');
+        } else {
+            //fixes issue described above
+            $popover.popover('toggle');
+        }
+    });
+})
+    </script>
 </body>
+
 </html>
