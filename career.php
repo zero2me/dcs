@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Degree College Shikaripara | Careers</title>
+    <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
+     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background: #f9f9f9; }
         h1, h2 { text-align: center; margin-bottom: 20px; }
         h2 { margin-top: 40px; }
@@ -19,9 +21,15 @@
         table { width: 100%; margin-top: 10px; }
     </style>
 </head>
-<body>
 
-<div class="content-wrapper">
+<body>
+    <!-- Start Your Body Code From here -->
+    <div class="wrapper">
+        <!-- header starts here -->
+     <?php include 'header.php'; ?>  
+        <!-- /header -->
+        <!-- Content wrapper -->
+     <div class="content-wrapper">
     <?php include 'header.php'; ?>
 
     <h1>Career Opportunities & Government Schemes</h1>
@@ -103,9 +111,36 @@
 
     <?php include 'footer.php'; ?>
 </div>
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+        <!-- Footer -->
+     <?php include 'footer.php'; ?>  
+    </div>
+    <!--Scripts Starts-->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/434d359724.js"></script>
+    <script>
+    $(document).on('click', function (e) {
+    var
+        $popover,
+        $target = $(e.target);
+    //do nothing if there was a click on popover content
+    if ($target.hasClass('popover') || $target.closest('.popover').length) {
+        return;
+    }
+    $('[data-toggle="popover"]').each(function () {
+        $popover = $(this);
+        if (!$popover.is(e.target) &&
+            $popover.has(e.target).length === 0 &&
+            $('.popover').has(e.target).length === 0)
+        {
+            $popover.popover('hide');
+        } else {
+            //fixes issue described above
+            $popover.popover('toggle');
+        }
+    });
+})
+    </script>
 </body>
+
 </html>
