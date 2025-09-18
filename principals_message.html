@@ -140,13 +140,14 @@
     object-fit: cover;
 }
 .principal-highlight .desk-image {
-    width: 100%; /* takes full width of message box */
-    max-width: 250px; /* optional: limit max width */
-    display: block;
-    margin: 0 auto 15px auto; /* center horizontally and give bottom margin */
+    width: 100%;        /* spans the full width of the message box */
+    height: auto;       /* maintains aspect ratio */
+    display: block;     /* remove inline gaps */
+    margin-bottom: 15px; /* spacing below image */
     border-radius: 8px; /* optional rounded corners */
-    object-fit: cover;
+    object-fit: cover;  /* crops if needed to fill width */
 }
+
 
         /* Responsive behavior */
         @media (max-width: 768px) {
