@@ -217,7 +217,8 @@
                      <div class="dir-detail">
                     <h3 class="dir-title">Principal</h3>
                     <img class="responsive-img circle" src="img/principal.jpg" alt="Principal">
-                    <div class="principal-name">Prof. Subodh Rajak</div>
+                    <div class="principal-name">Dr. Subodh Prasad Rajak,
+</div>
                     <div class="designation">Professor In- Charge,
 Degree College, Shikaripara.</div>
                     
