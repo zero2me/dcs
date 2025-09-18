@@ -216,7 +216,7 @@
   <div class="panel">
     <div class="faculty-gallery">
       <div class="faculty-card">
-        <img src="img/kishore.jpg" alt="Dr. Kishor Chandra Kharkwal">
+        <img src="img/gallery/faculty/kishore.jpg" alt="Dr. Kishor Chandra Kharkwal">
         <p><strong>Dr. Kishor Chandra Kharkwal</strong><br>H.O.D, Dept. of Physics</p>
       </div>
     </div>
