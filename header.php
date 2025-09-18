@@ -49,6 +49,7 @@
                         <li>
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Academics <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
+                                <li><a href="bachelors.php">Bachelors</a></li>
                                 <li><a href="pdf/academic_calendar.pdf">Academic Calendar</a></li>
                             </ul>
                         </li>
