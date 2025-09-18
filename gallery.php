@@ -1,15 +1,106 @@
+<?php
+$dir = "img/events"; // folder containing images
+$images = glob($dir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+
+// Function to create a readable caption from filename
+function getCaption($filename) {
+    $base = basename($filename);          // get file name with extension
+    $name = pathinfo($base, PATHINFO_FILENAME); // remove extension
+    $name = str_replace(['-', '_'], ' ', $name); // replace - and _ with space
+    return ucwords($name); // capitalize words
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>IDegree College Shikaripara | Gallery</title>
+    <title>Degree College Shikaripara | Gallery</title>
     <!--Style Starts-->
     <link rel="icon" type="image/png" href="img/college_logo.jpg">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        h1 { text-align: center; }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #333;
+        }
+
+        .caption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Lightbox overlay */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 70%;
+            border-radius: 5px;
+        }
+
+        .lightbox-caption {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .close, .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+            padding: 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .close { top: 20px; right: 30px; font-size: 30px; transform: none; }
+        .prev { left: 20px; }
+        .next { right: 20px; }
+    </style>
 </head>
 
 <body id="gallery">
@@ -22,127 +113,93 @@
     <div class="contents-wrapper">
         <!-- Contents starts here -->
         <div class="content">
-            <div class="gallery gallery-design">
-                <div class="title">
-                    <h1>Gallery</h1>
-                </div>
+          <div class="gallery">
+    <?php foreach ($images as $index => $image): ?>
+        <div class="gallery-item">
+            <img src="<?php echo $image; ?>" alt="<?php echo getCaption($image); ?>" onclick="openLightbox(<?php echo $index; ?>)">
+            <div class="caption"><?php echo getCaption($image); ?></div>
+        </div>
+    <?php endforeach; ?>
+</div>
 
-                <div class="grid">
-                    <div class="grid-sizer"></div>
-                    <!-- Remove appropriate comment and insert relevant caption if needed. -->
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <a class="close" onclick="closeLightbox()">&times;</a>
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <img id="lightbox-img" src="" alt="Image">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
 
-                    <!--Image 1-->
-                    <a class="element-item grid-item mix mockups" href="img/board1.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/board1.jpg" alt="">
-                    </a>
+<script>
+let images = <?php echo json_encode($images); ?>;
 
-                    <!--Image 2-->
-                    <a class="element-item grid-item mix mockups" href="img/classroom.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/classroom.jpg" alt="">
-                    </a>
+// Generate captions from filenames
+let captions = images.map(function(img) {
+    let name = img.split('/').pop().split('.')[0];
+    name = name.replace(/[-_]/g, ' ');
+    return name.replace(/\b\w/g, l => l.toUpperCase());
+});
 
-                    <!--Image 3-->
-                    <a class="element-item grid-item mix mockups" href="img/gallery/faculty.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/faculty.jpg" alt="">
-                    </a>
+let currentIndex = 0;
 
-                    <!--Image 4-->
-                    <a class="element-item grid-item mix mockups" href="img/gallery/focus.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/focus.jpg" alt="">
-                    </a>
+function openLightbox(index) {
+    currentIndex = index;
+    document.getElementById('lightbox').style.display = 'flex';
+    updateLightbox();
+}
 
-                    <!--Image 5-->
-                    <a class="element-item grid-item mix mockups" href="img/event1.JPG">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/event1.jpg" alt="">
-                    </a>
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
 
-                    <!--Image 6-->
-                    <a class="element-item grid-item mix mockups" href="img/event2.JPG">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/event2.jpg" alt="">
-                    </a>
+function changeImage(direction) {
+    currentIndex += direction;
+    if(currentIndex < 0) currentIndex = images.length - 1;
+    if(currentIndex >= images.length) currentIndex = 0;
+    updateLightbox();
+}
 
-                    <!--Image 7-->
-                    <a class="element-item grid-item mix mockups" href="img/gallery/students.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/students.jpg" alt="">
-                    </a>
+function updateLightbox() {
+    document.getElementById('lightbox-img').src = images[currentIndex];
+    document.getElementById('lightbox-caption').textContent = captions[currentIndex];
+}
 
-                    <!--Image 8-->
-                    <a class="element-item grid-item mix mockups" href="img/gallery/gallery.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/gallery.jpg" alt="">
-                    </a>
+// Close lightbox when clicking outside image
+document.getElementById('lightbox').addEventListener('click', function(e) {
+    if(e.target.id === 'lightbox') closeLightbox();
+});
 
-                    <!--Image 9-->
-                    <a class="element-item grid-item mix mockups" href="img/gallery/talk.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/talk.jpg" alt="">
-                    </a>
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+    if(document.getElementById('lightbox').style.display === 'flex') {
+        if(e.key === 'ArrowRight') changeImage(1);
+        if(e.key === 'ArrowLeft') changeImage(-1);
+        if(e.key === 'Escape') closeLightbox();
+    }
+});
 
-                    <!--Image 10-->
-                    <a class="element-item grid-item mix mockups" href="img/event3.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/event3.jpg" alt="">
-                    </a>
+// Touch swipe support
+let touchStartX = 0;
+let touchEndX = 0;
 
-                    <!--Image 11-->
-                    <a class="element-item grid-item mix mockups" href="img/gallery/winners.jpg">
-                        <!--                            <div class="desc">
-                                                        <div class="desc-title">
-                                                            <span>Caption</span>
-                                                        </div>
-                                                    </div>
-                        --> <img src="img/thumbnail/winners.jpg" alt="">
-                    </a>
+const lightboxDiv = document.getElementById('lightbox');
 
-                </div>
-            </div>
+lightboxDiv.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+lightboxDiv.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    if(touchEndX < touchStartX - swipeThreshold) changeImage(1); // swipe left → next
+    if(touchEndX > touchStartX + swipeThreshold) changeImage(-1); // swipe right → prev
+}
+</script>
         </div>
     </div>
     <!-- Footer -->
