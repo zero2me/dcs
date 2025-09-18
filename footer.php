@@ -50,10 +50,10 @@
         <!-- Copyright & Developer -->
         <div class="row">
             <div class="col-sm-6 text-left">
-                <p>&copy; <?php echo date("Y"); ?> Degree College Shikaripara.<br> All Rights Reserved.</p>
+                <p align='center'>&copy; <?php echo date("Y"); ?> Degree College Shikaripara.<br> All Rights Reserved.</p>
             </div>
             <div class="col-sm-6 text-right">
-                <p>
+                <p align='center'>
                     Developed by <strong>Suman Kumar</strong> <br>
                     <a href="mailto:Suman3961@gmail.com">Suman3961@gmail.com</a><br>
                     <img src="img/mylogo.png" alt="Developer Logo" style="height:25px; margin-left:10px;">
