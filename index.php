@@ -1,3 +1,7 @@
+<?php
+$carouselDir = "img/gallery";
+$carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,31 +22,17 @@
    <?php include 'header.php'; ?>   <!-- PHP part -->
     <!-- /header -->
 
-    <!-- carousel -->
-    <div class="carousel-wrapper">
-        <div class="carousel" style="margin: 0 auto">
-            <div class="carousel-items">
-                <img height="400px" src="img/gallery/faculty.jpg" alt="Faculty">
-                <div></div>
-            </div>
-            <div class="carousel-items">
-                <img height="400px" src="img/gallery/gallery.jpg" alt="Gallery">
-                <div></div>
-            </div>
-            <div class="carousel-items">
-                <img height="400px" src="img/gallery/students.jpg" alt="Students">
-                <div></div>
-            </div>
-            <div class="carousel-items">
-                <img height="400px" src="img/gallery/talk.jpg" alt="Talk">
-                <div></div>
-            </div>
-            <div class="carousel-items">
-                <img height="400px" src="img/gallery/winners.jpg" alt="Winners">
-                <div></div>
-            </div>
+   <!-- carousel -->
+<div class="carousel-wrapper">
+    <div class="carousel" style="margin: 0 auto">
+        <?php foreach($carouselImages as $img): ?>
+        <div class="carousel-items">
+            <img height="400px" src="<?php echo $img; ?>" alt="<?php echo htmlspecialchars(pathinfo($img, PATHINFO_FILENAME)); ?>">
+            <div></div>
         </div>
+        <?php endforeach; ?>
     </div>
+</div>
 
     <!-- Announcements, Events, News -->
     <div class="widgets-wrapper">

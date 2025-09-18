@@ -44,6 +44,7 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
                         <li><a href="principals_message.php">Principal</a></li>
                         <li>
