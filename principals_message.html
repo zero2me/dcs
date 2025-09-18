@@ -110,32 +110,26 @@
             margin: 15px 0;
         }
 
-        /* Signature style inside message */
         .signature {
-            text-align: right;
-            margin-top: 20px;
-            padding-top: 10px;
-            border-top: 1px solid #ccc;
-            font-weight: bold;
-            color: #0073e6;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+    text-align: right;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+    color: #0073e6;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
-        .signature span.principal-name {
-            font-size: 18px;
-            font-weight: bold;
-            color: #0073e6;
-            margin-bottom: 5px;
-            display: block;
-        }
+.signature span.principal-name {
+    display: block; /* forces the name to be on its own line */
+    margin-bottom: 5px; /* optional spacing after name */
+}
 
-        .signature br {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 5px;
-            display: block; /* each designation on new line */
-        }
+.signature .designation-line {
+    display: block; /* forces each line of designation on a new line */
+}
+
 
         /* Responsive behavior */
         @media (max-width: 768px) {
@@ -204,10 +198,11 @@
                     </blockquote>
 
                     <footer class="signature">
-                        — <span class="principal-name">Dr. Subodh Prasad Rajak</span><br>
-                        Professor In-Charge,<br>
-                        Degree College Shikaripara.
+                        — <span class="principal-name">Dr. Subodh Prasad Rajak</span>
+                        <span class="designation-line">Professor In-Charge,</span>
+                        <span class="designation-line">Degree College Shikaripara.</span>
                     </footer>
+                    
                 </section>
             </div>
         </div>
