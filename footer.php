@@ -43,5 +43,22 @@
                 <a href="#!" title=""><i class="fa fa-twitter" aria-hidden="true" title="Official Twitter Account"></i></a>
             </div>
         </div>
+
+        <!-- Divider -->
+        <hr style="margin: 20px 0; border-top: 1px solid #ccc;">
+
+        <!-- Copyright & Developer -->
+        <div class="row">
+            <div class="col-sm-6 text-left">
+                <p>&copy; <?php echo date("Y"); ?> Degree College Shikaripara. All Rights Reserved.</p>
+            </div>
+            <div class="col-sm-6 text-right">
+                <p>
+                    Developed by <strong>Suman Kumar</strong> 
+                    <a href="mailto:Suman3961@gmail.com">Suman3961@gmail.com</a>
+                    <img src="img/dev_logo.png" alt="Developer Logo" style="height:25px; margin-left:10px;">
+                </p>
+            </div>
+        </div>
     </div>
 </footer>
