@@ -9,6 +9,68 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        /* Faculty Section */
+.faculty-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.faculty-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.faculty-card {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.faculty-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #eee;
+}
+
+.faculty-card p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.faculty-card strong {
+  display: block;
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .faculty-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+        </style>
+
 </head>
 
 <body>
@@ -19,179 +81,54 @@
         <!-- header -->
         <!-- Content wrapper -->
         <div class="contents-wrapper">
-            <!-- Contents starts here -->
-            <!-- <div class="content faculty-list">
-                <h1>Faculty</h1>
-                <br>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h3><a href="faculty/dks001.php">Dhirendra Sinha</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/DKS.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Physics)
-                                <br/> IIT Kanpur
-                                <br/>
-                                <b>Areas of Interest : </b>Physics of organic semiconductor devices, in particular, organic light-emitting diodes and solar cells. Hybrid devices involving organic materials embedded with inorganic nano-particles. Understanding physical processes such as charge-carrier transport and recombination in the practical devices.
-                                <br/> Contact : <b>dhirendra.sinha@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3> <a href="faculty/pps001.php">Pratik Shah</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/pratik.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Computer Vision)
-                                <br/> DA-IICT
-                                <br/>
-                                <b>Areas of Interest : </b>Differential Geometry, Signal Processing, Scientific Computing.
-                                <br/> Contact : <b>pratik@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/bnc001.php">Barnali Chetia</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/barnali.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Linguistics)
-                                <br/> JNU New Delhi
-                                <br/>
-                                <b>Areas of Interest : </b>Applied Linguistics, Sociolinguistics, Discourse Analysis, Gender Studies, Technical Communication.
-                                <br/> Contact : <b>barnali@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/aaj001.php">Ajay Nath</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/Ajaynath.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Physics)
-                                <br/> IIT Patna
-                                <br/>
-                                <b>Areas of Interest : </b> Cigar-shaped Bose-Einstein condensate, Optical Lattices, Solitons, Many-body physics.
-                                <br/> Contact : <b>ajay.nath@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/krj001.php">Kamal Kishor Jha</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/Kamal.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (VLSI Design)
-                                <br/> ABV-IIITM, Gwalior
-                                <br/>
-                                <b>Areas of Interest : </b> Device-Circuit Co-Design, Hybrid Device-Circuit Interaction, Novel Semiconductor Device Design and Modeling.
-                                <br/> Contact : <b>kamal@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/jsb001.php">Jignesh S. Bhatt</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/Jignesh.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Information and Communication Technology)
-                                <br/> DA-IICT
-                                <br/>
-                                <b>Areas of Interest : </b> Signal and image processing, Remote sensing, Inverse problems in imaging.
-                                <br/> Contact : <b>jignesh.bhatt@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/aap001.php">Ashish Phophalia</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/ashish_phophalia.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Information and Communication Technology)
-                                <br/> DA-IICT
-                                <br/>
-                                <b>Areas of Interest : </b> Image Processing, Pattern Recognition, Medical Image Analysis.
-                                <br/> Contact : <b>ashish_p@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/nkc001.php">Naveen Kumar</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/Naveen.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                MTech, Ph.D. (Pursuing)
-                                <br/> DA-IICT
-                                <br/>
-                                <b>Areas of Interest : </b> Information security.
-                                <br/> Contact : <b>naveen_kumar@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/sal001.php"> Swapnil A. Lokhande</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/swapnil.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Mathematics)
-                                <br/> IIT Bombay
-                                <br/>
-                                <b>Areas of Interest : </b> Commutative Algebra.
-                                <br/> Contact : <b>swapnil@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/pag001.php">Parth Gupta</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/Parth.jpg">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D. (Pursuing)
-                                <br/> Technical University of Valencia (UPV), Spain
-                                <br/>
-                                <b>Areas of Interest : </b> Information Retrieval, Machine Learning.
-                                <br/> Contact : <b>pgupta@degreecollegeshikaripara.ac.in</b>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><a href="faculty/bca001.php">Bhargab Chattopadhyay</a></h3>
-                        <div class="row">
-                            <div class="col-sm-2 col-md-2 col-lg-2">
-                                <img src="img/no_photo.jpg" style="max-width: 100px;">
-                            </div>
-                            <div class="col-sm-10 col-md-10 col-lg-10">
-                                Ph.D.(Statistics)
-                                <br/> University of Connecticut, USA    
-                                <br/>
-                                <b>Areas of Interest : </b>  Statistics.
-                                <br/> Contact : 
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div> -->
+  <div class="content faculty-section">
+
+    <section id="faculty-gallery" class="faculty-highlight">
+      <h1>Faculty Gallery</h1>
+      <p>
+        The faculty members of <strong>Degree College, Shikaripara</strong> are dedicated to guiding students 
+        with academic excellence, mentorship, and values. Our team represents diverse disciplines, combining 
+        knowledge and experience to nurture holistic development in students.
+      </p>
+
+      <div class="faculty-gallery">
+
+        <div class="faculty-card">
+          <img src="images/principal.jpg" alt="Prof. Subodh Rajak" class="responsive-img circle" />
+          <p><strong>Prof. Subodh Rajak</strong><br>Principal & Head of Arts Department</p>
         </div>
+
+        <div class="faculty-card">
+          <img src="images/varun.jpeg" alt="Prof. Varun" class="responsive-img circle" />
+          <p><strong>Prof. Varun</strong><br>Assistant Professor</p>
+        </div>
+
+        <div class="faculty-card">
+          <img src="images/sidhor.jpeg" alt="Prof. Sidhor" class="responsive-img circle" />
+          <p><strong>Prof. Sidhor</strong><br>Science Faculty</p>
+        </div>
+
+        <div class="faculty-card">
+          <img src="images/babita.jpeg" alt="Prof. Babita" class="responsive-img circle" />
+          <p><strong>Prof. Babita</strong><br>Commerce Faculty</p>
+        </div>
+
+        <div class="faculty-card">
+          <img src="images/gopal.jpeg" alt="Prof. Gopal" class="responsive-img circle" />
+          <p><strong>Prof. Gopal</strong><br>Assistant Professor</p>
+        </div>
+
+        <div class="faculty-card">
+          <img src="images/ashok.jpeg" alt="Prof. Ashok" class="responsive-img circle" />
+          <p><strong>Prof. Ashok</strong><br>Assistant Professor</p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+
+
         <!-- Footer -->
        <?php include 'footer.php'; ?>  
     </div>
