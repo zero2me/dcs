@@ -121,6 +121,11 @@
     line-height: 1.6;
 }
 
+.signature div {
+    display: block; /* force each line to appear on its own row */
+}
+
+
 .signature span.principal-name {
     display: block; /* forces the name to be on its own line */
     margin-bottom: 5px; /* optional spacing after name */
@@ -198,10 +203,11 @@
                     </blockquote>
 
                     <footer class="signature">
-                        — <span class="principal-name">Dr. Subodh Prasad Rajak</span>
-                        <span class="designation-line">Professor In-Charge,</span>
-                        <span class="designation-line">Degree College Shikaripara.</span>
+                        <div>— Dr. Subodh Prasad Rajak</div>
+                        <div>Professor In-Charge,</div>
+                        <div>Degree College Shikaripara.</div>
                     </footer>
+                    
                     
                 </section>
             </div>
