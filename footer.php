@@ -56,7 +56,7 @@
                 <p>
                     Developed by <strong>Suman Kumar</strong> 
                     <a href="mailto:Suman3961@gmail.com">Suman3961@gmail.com</a>
-                    <img src="img/dev_logo.png" alt="Developer Logo" style="height:25px; margin-left:10px;">
+                    <img src="img/mylogo.png" alt="Developer Logo" style="height:25px; margin-left:10px;">
                 </p>
             </div>
         </div>
