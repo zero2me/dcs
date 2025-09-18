@@ -30,7 +30,6 @@
         <!-- /header -->
         <!-- Content wrapper -->
      <div class="content-wrapper">
-    <?php include 'header.php'; ?>
 
     <h1>Career Opportunities & Government Schemes</h1>
 
@@ -109,7 +108,6 @@
         ?>
     </div>
 
-    <?php include 'footer.php'; ?>
 </div>
         <!-- Footer -->
      <?php include 'footer.php'; ?>  
