@@ -125,13 +125,13 @@ $carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
                                 <div class="date">
                                         <span>
                                             <!-- Day -->
-                                            <div class="day">9</div>
+                                            <div class="day">21</div>
                                             <!-- Month Short Form (first three letters) -->
-                                            <div class="month">Apr</div>
+                                            <div class="month">Jun</div>
                                         </span>
                                 </div>
                                 <!-- Event-Description -->
-                                <div class="event-text">First Annual Institute Day</div>
+                                <div class="event-text">Yoga Day 2025</div>
                             </div>
                         </li>
                         <li>
