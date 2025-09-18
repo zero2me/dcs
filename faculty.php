@@ -178,7 +178,7 @@
       </div>
 
       <div class="faculty-card">
-        <img src="img/gallery/faculty/no_photo.jpg" alt="Dr. Ashok Kumar Bharti">
+        <img src="img/gallery/faculty/ashok.jpg" alt="Dr. Ashok Kumar Bharti">
         <p><strong>Dr. Ashok Kumar Bharti</strong><br>H.O.D, Dept. of Psychology</p>
       </div>
       <div class="sub-faculty">
@@ -216,7 +216,7 @@
   <div class="panel">
     <div class="faculty-gallery">
       <div class="faculty-card">
-        <img src="img/gallery/faculty/kishor.jpg" alt="Dr. Kishor Chandra Kharkwal">
+        <img src="img/no_photo.jpg" alt="Dr. Kishor Chandra Kharkwal">
         <p><strong>Dr. Kishor Chandra Kharkwal</strong><br>H.O.D, Dept. of Physics</p>
       </div>
     </div>
