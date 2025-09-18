@@ -40,8 +40,8 @@ $carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
 
             <!-- Edit this section for important announcements.-->
             <div class="alert alert-warning text-center">
-                Institute invites applications for <a class="alert-link" href="http://pgadmissions.degreecollegeshikaripara.ac.in/">MTech
-                and PhD programs - Academic Year 2025-26</a>
+                Institute invites applications for <a class="alert-link" href="https://degreecollegeshikaripara.ac.in/bachelor_admission.php">Bachelors
+                programs - Academic Year 2025-26</a>
             </div>
 
             <!-- Announcements -->
@@ -49,9 +49,12 @@ $carouselImages = glob($carouselDir . "/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
                 <div class='announcement-content '>
                     <div class="widgets-title"><h2>Announcements</h2></div>
                     <ul id="announcement-list">
+                         <li>
+                            Celebrating <b>Hindi Pakhwara</b> 1-15 september:<br>
+                        </li>
                         <li>
-                            For admissions to <b>Masters and Ph.D. programs</b> visit:<br><a
-                                href="http://pgadmissions.degreecollegeshikaripara.ac.in" target="_blank"> PG-Admission-Portal.</a>
+                            For admissions to <b>Bachelors programs</b> visit:<br><a
+                                href="https://degreecollegeshikaripara.ac.in/bachelor_admission.php" target="_blank"> UG-Admission-Portal.</a>
                         </li>
                         <li>
                             For queries related to <b>Bachelors programs </b>contact us at: &nbsp; &nbsp; <span
