@@ -262,7 +262,7 @@ suman3961@gmail.com
 
 
 <!-- Ribbon Reveal Overlay -->
-<style>
+<!-- <style>
 .ribbon-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -344,7 +344,7 @@ suman3961@gmail.com
     }, 1200);
   };
 })();
-</script>
+</script> -->
 
 </body>
 
